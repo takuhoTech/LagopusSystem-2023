@@ -1,2 +1,2 @@
-# cycling-power-meter
-DIY cycling-power-meter
+# Lagopus-system
+Advanced pilot-assistance system
