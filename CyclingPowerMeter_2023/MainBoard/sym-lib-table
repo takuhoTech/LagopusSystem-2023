@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name "ESP32-WROOM-32E_16MB")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/ESP32-WROOM-32E_16MB/ESP32-WROOM-32E_16MB.lib")(options "")(descr ""))
+  (lib (name "NJM2845DL1-33-TE1")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/NJM2845DL1-33-TE1/NJM2845DL1-33-TE1.lib")(options "")(descr ""))
+  (lib (name "AD7193BRUZ")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/AD7193BRUZ/AD7193BRUZ.lib")(options "")(descr ""))
+  (lib (name "Seeeduino_XIAO")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/Seeeduino_XIAO/Seeeduino_XIAO.lib")(options "")(descr ""))
+  (lib (name "Seeed_Studio_XIAO_nRF52840_Sense")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Seeed_Studio_XIAO_nRF52840_Sense/Seeed_Studio_XIAO_nRF52840_Sense.kicad_sym")(options "")(descr ""))
+  (lib (name "ADS122U04IPW")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/ADS122U04IPW/ADS122U04IPW.lib")(options "")(descr ""))
+)
