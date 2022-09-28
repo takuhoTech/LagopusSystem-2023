@@ -5,4 +5,5 @@
   (lib (name "Seeed_Studio_XIAO_nRF52840_Sense")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Seeed_Studio_XIAO_nRF52840_Sense/Seeed_Studio_XIAO_nRF52840_Sense.pretty")(options "")(descr ""))
   (lib (name "Seeeduino_XIAO")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Seeeduino_XIAO/Seeeduino_XIAO.pretty")(options "")(descr ""))
   (lib (name "ADS122U04IPW")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/ADS122U04IPW/ADS122U04IPW.pretty")(options "")(descr ""))
+  (lib (name "SSM3J332RLF")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/SSM3J332RLF/SSM3J332RLF.pretty")(options "")(descr ""))
 )

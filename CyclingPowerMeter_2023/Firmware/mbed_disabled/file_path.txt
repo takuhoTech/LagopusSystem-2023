@@ -1,0 +1,1 @@
+D:\Arduino\portable\packages\Seeeduino\hardware\nrf52\1.0.0\variants\Seeed_XIAO_nRF52840_Sense

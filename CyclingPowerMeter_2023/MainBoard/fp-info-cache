@@ -1,4 +1,4 @@
-20393258610484752
+20396586922985310
 AD7193BRUZ
 AD7193BRUZ
 
@@ -6,6 +6,13 @@ AD7193BRUZ
 0
 28
 28
+ADS122U04IPW
+ADS122U04IPW
+
+
+0
+16
+16
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -78945,13 +78952,20 @@ rotary encoder
 0
 5
 4
+SSM3J332RLF
+SSM3J332RLF
+
+
+0
+3
+3
 Seeed_Studio_XIAO_nRF52840_Sense
 Seeed_Studio_XIAO_nRF52840_Sense
 
 
 0
-18
-18
+14
+14
 Seeeduino_XIAO
 Seeeduino_XIAO
 

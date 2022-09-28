@@ -1,0 +1,1 @@
+D:\Arduino\portable\packages\Seeeduino\hardware\mbed\2.7.2\variants\SEEED_XIAO_NRF52840_SENSE
