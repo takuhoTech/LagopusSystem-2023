@@ -1,2 +1,2 @@
-# Lagopus-system
+# LagopusSystem
 Advanced pilot-assistance system
