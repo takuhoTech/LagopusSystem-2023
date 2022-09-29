@@ -6,4 +6,5 @@
   (lib (name "Seeeduino_XIAO")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Seeeduino_XIAO/Seeeduino_XIAO.pretty")(options "")(descr ""))
   (lib (name "ADS122U04IPW")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/ADS122U04IPW/ADS122U04IPW.pretty")(options "")(descr ""))
   (lib (name "SSM3J332RLF")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/SSM3J332RLF/SSM3J332RLF.pretty")(options "")(descr ""))
+  (lib (name "SK-12D11VG3")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/SK-12D11VG3/SK-12D11VG3.pretty")(options "")(descr ""))
 )

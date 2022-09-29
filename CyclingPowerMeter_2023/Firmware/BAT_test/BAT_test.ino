@@ -1,3 +1,5 @@
+#include <Adafruit_TinyUSB.h>
+
 /*
  * Test to read a LiPo battery connected to VBAT on the
  * underside of XIAO BLE boards.
