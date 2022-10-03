@@ -1,4 +1,4 @@
-20398251338534088
+20401580655886339
 AD7193BRUZ
 AD7193BRUZ
 
@@ -24,6 +24,13 @@ Audio_Module
 Reverb_BTDR-1V
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
 audio belton reverb
+0
+7
+7
+BLA05-05S30
+BLA05-05S30
+BLA05-05S30-1
+Connector
 0
 7
 7
@@ -77041,6 +77048,13 @@ WiFi IEEE802.11 b/g/n
 0
 44
 44
+RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top
+RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top
+
+
+0
+0
+0
 Relay_SMD
 Relay_2P2T_10x6mm_TE_IMxxG
 Signal Relay, 10x6mm, 2 Form C, Gull Wings, https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F108-98001%7FZ.1%7Fpdf%7FEnglish%7FENG_DS_108-98001_Z.1.pdf

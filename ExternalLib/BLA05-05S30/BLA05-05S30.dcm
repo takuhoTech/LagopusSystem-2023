@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BLA05-05S30
+D ULTRALOW NOISE ISOLATEDDC-DC1.5W
+K
+F http://www.bellnix.co.jp/pdf/pdf/BLA05.pdf
+$ENDCMP
+#
+#End Doc Library
