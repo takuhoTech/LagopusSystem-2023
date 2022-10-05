@@ -1,4 +1,4 @@
-20401580655886339
+20404910535555830
 AD7193BRUZ
 AD7193BRUZ
 
@@ -27,6 +27,13 @@ audio belton reverb
 0
 7
 7
+B3AL-1002P-MS
+B3AL-1002P-MS
+B3AL-1002P-MS-2
+Switch
+0
+2
+2
 BLA05-05S30
 BLA05-05S30
 BLA05-05S30-1
@@ -77053,8 +77060,8 @@ RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top
 
 
 0
-0
-0
+3
+3
 Relay_SMD
 Relay_2P2T_10x6mm_TE_IMxxG
 Signal Relay, 10x6mm, 2 Form C, Gull Wings, https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F108-98001%7FZ.1%7Fpdf%7FEnglish%7FENG_DS_108-98001_Z.1.pdf
@@ -78965,6 +78972,13 @@ Alps rotary encoder, EC12E..., vertical shaft, mounting holes with circular dril
 rotary encoder
 0
 5
+4
+S2B-PH-SM4-TB
+S2B-PH-SM4-TB
+S2B-PH-SM4-TB(LF)(SN)-2
+Connector
+0
+4
 4
 SK-12D11VG3
 SK12D11VG3
