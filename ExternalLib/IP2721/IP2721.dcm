@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IP2721
+D TYPEC/PD2.0/PD3.0 Physical Layer IC for USB TYPEC input Interfaces Working voltage: 3V~25V  Package: TSSOP16
+K
+F https://datasheet.lcsc.com/szlcsc/2006111335_INJOINIC-IP2721_C603176.pdf
+$ENDCMP
+#
+#End Doc Library

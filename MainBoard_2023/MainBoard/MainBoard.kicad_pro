@@ -320,6 +320,10 @@
     [
       "5671d260-6e90-4ce7-91e6-3acf9202ce84",
       ""
+    ],
+    [
+      "6a473b76-9def-47b1-bd12-ebbe49093892",
+      "AudioAmplifier"
     ]
   ],
   "text_variables": {}

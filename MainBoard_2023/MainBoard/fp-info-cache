@@ -1,11 +1,18 @@
-20394933737763622
+20404933482756030
+AO3400A
+AO3400A
+
+
+0
+3
+3
 Adafruit_BNO055_STEMMA_QT
 Adafruit_BNO055_STEMMA_QT
 
 
 0
 14
-7
+11
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -53115,6 +53122,13 @@ heatsink
 0
 2
 1
+IP2721
+IP2721
+IP2721 TSSOP16 _2021_1
+Integrated Circuit
+0
+16
+16
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
@@ -57686,6 +57700,13 @@ Yellow 5381 Series LED
 0
 2
 2
+MAX9704
+MAX9704
+
+
+0
+33
+33
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -77041,6 +77062,13 @@ RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top
 0
 3
 3
+Raspberry_Pi_Pico
+Raspberry_Pi_Pico
+
+
+0
+43
+43
 Relay_SMD
 Relay_2P2T_10x6mm_TE_IMxxG
 Signal Relay, 10x6mm, 2 Form C, Gull Wings, https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F108-98001%7FZ.1%7Fpdf%7FEnglish%7FENG_DS_108-98001_Z.1.pdf
@@ -85294,6 +85322,20 @@ igbt diode module
 0
 25
 25
+USB_TypeC_6PIN
+USB_TypeC_6PIN
+
+
+0
+10
+10
+VS1053B
+VS1053B
+<b>LQFP48</b>
+
+0
+48
+48
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
