@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# LT1963AEST-3.3#PBF
+#
+DEF LT1963AEST-3.3#PBF VR 0 40 Y Y 1 L N
+F0 "VR" 0 -200 50 H V L BNN
+F1 "LT1963AEST-3.3#PBF" 0 -100 50 H V L BNN
+F2 "SOT223" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "LT1963AEST-3.3#PBF" 0 0 50 H I L BNN "MPN"
+F5 "Linear Technology" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+P 2 0 0 16 700 0 0 0 N
+P 2 0 0 16 0 0 0 400 N
+S 117 67 817 467 0 0 16 f
+X VIN 1 -200 300 200 R 40 40 0 0 P 
+X GND 2 -200 200 200 R 40 40 0 0 P 
+X VOUT 3 900 300 200 L 40 40 0 0 P 
+X GND@1 4 -200 100 200 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

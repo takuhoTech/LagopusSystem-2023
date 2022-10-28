@@ -11,4 +11,7 @@
   (lib (name "IP2721")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/IP2721/IP2721.pretty")(options "")(descr ""))
   (lib (name "AO3400A")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/AO3400A/AO3400A.pretty")(options "")(descr ""))
   (lib (name "USB_TypeC_6PIN")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/USB_TypeC_6PIN/USB_TypeC_6PIN.pretty")(options "")(descr ""))
+  (lib (name "LT1963AEST-3.3_PBF")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/LT1963AEST-3.3_PBF/LT1963AEST-3.3_PBF.pretty")(options "")(descr ""))
+  (lib (name "UFG1J100MEM")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/UFG1J100MEM/UFG1J100MEM.pretty")(options "")(descr ""))
+  (lib (name "CC6-1203SR-E")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/CC6-1203SR-E/CC6-1203SR-E.pretty")(options "")(descr ""))
 )
