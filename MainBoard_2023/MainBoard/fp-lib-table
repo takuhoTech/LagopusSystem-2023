@@ -14,4 +14,7 @@
   (lib (name "LT1963AEST-3.3_PBF")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/LT1963AEST-3.3_PBF/LT1963AEST-3.3_PBF.pretty")(options "")(descr ""))
   (lib (name "UFG1J100MEM")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/UFG1J100MEM/UFG1J100MEM.pretty")(options "")(descr ""))
   (lib (name "CC6-1203SR-E")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/CC6-1203SR-E/CC6-1203SR-E.pretty")(options "")(descr ""))
+  (lib (name "DLW5BTM142TQ2")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/DLW5BTM142TQ2/DLW5BTM142TQ2.pretty")(options "")(descr ""))
+  (lib (name "BNX029-01")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/BNX029-01/BNX029-01.pretty")(options "")(descr ""))
+  (lib (name "BNX025H01")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/BNX025H01/BNX025H01.pretty")(options "")(descr ""))
 )

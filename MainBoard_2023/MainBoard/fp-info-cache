@@ -1,4 +1,4 @@
-20409934319106798
+20414935822979804
 AO3400A
 AO3400A
 
@@ -34,6 +34,20 @@ Switch
 0
 2
 2
+BNX025H01
+BNX025H01
+
+
+0
+6
+6
+BNX029-01
+BNX029-01
+
+
+0
+6
+6
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50252,6 +50266,13 @@ SMD SMT ceramic resonator filter filter hand-soldering
 0
 3
 3
+DLW5BTM142TQ2
+DLW5BTM142TQ2
+
+
+0
+4
+4
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator

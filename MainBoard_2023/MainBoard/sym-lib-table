@@ -14,4 +14,7 @@
   (lib (name "LT1963AEST-3.3_PBF")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/LT1963AEST-3.3_PBF/LT1963AEST-3.3_PBF.kicad_sym")(options "")(descr ""))
   (lib (name "UFG1J100MEM")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/UFG1J100MEM/UFG1J100MEM.kicad_sym")(options "")(descr ""))
   (lib (name "CC6-1203SR-E")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/CC6-1203SR-E/CC6-1203SR-E.lib")(options "")(descr ""))
+  (lib (name "DLW5BTM142TQ2")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/DLW5BTM142TQ2/DLW5BTM142TQ2.kicad_sym")(options "")(descr ""))
+  (lib (name "BNX029-01")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/BNX029-01/BNX029-01.lib")(options "")(descr ""))
+  (lib (name "BNX025H01")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/BNX025H01/BNX025H01.lib")(options "")(descr ""))
 )
