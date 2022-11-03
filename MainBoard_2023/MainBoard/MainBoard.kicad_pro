@@ -324,6 +324,10 @@
     [
       "6a473b76-9def-47b1-bd12-ebbe49093892",
       "AudioAmplifier"
+    ],
+    [
+      "8f1460a1-bf5a-4b04-9570-47768632e84c",
+      "RS485"
     ]
   ],
   "text_variables": {}
