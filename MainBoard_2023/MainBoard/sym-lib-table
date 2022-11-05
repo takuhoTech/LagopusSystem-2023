@@ -19,4 +19,5 @@
   (lib (name "BNX025H01")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/BNX025H01/BNX025H01.kicad_sym")(options "")(descr ""))
   (lib (name "UFG1J470MPM")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/UFG1J470MPM/UFG1J470MPM.kicad_sym")(options "")(descr ""))
   (lib (name "Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector/Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector.kicad_sym")(options "")(descr ""))
+  (lib (name "A6S-3104-H")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/A6S-3104-H/A6S-3104-H.kicad_sym")(options "")(descr ""))
 )

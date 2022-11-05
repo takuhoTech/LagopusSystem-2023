@@ -10,3 +10,8 @@ C-12810                                      S2B-PH-SM4-TB
 https://www.marutsu.co.jp/pc/i/30458555/     ADS122U04IPWR
 P-15303
 https://jp.rs-online.com/web/p/ethernet-connectors/8006898      RJ11_Inverted_Right_Angle_Dual_Port_PCB_Modular_Jack_6_6
+P-03141                                      ＤＩＰスイッチ　２Ｐ
+I-14737                                      シュミットトリガインバータ
+I-16602                                      RS485 出力段
+https://jp.rs-online.com/web/p/dip-sip-switches/6821005              ＤＩＰスイッチ　3Ｐ
+C-02395                                      micro SD
