@@ -15,7 +15,7 @@
     (symbol "Seeed_Studio_XIAO_nRF52840_Sense_0_1"
       (rectangle (start -19.05 13.97) (end 17.78 -13.97)
         (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
+        (fill (type background))
       )
     )
     (symbol "Seeed_Studio_XIAO_nRF52840_Sense_1_1"
