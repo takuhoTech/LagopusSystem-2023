@@ -21,4 +21,8 @@
   (lib (name "Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector/Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector.pretty")(options "")(descr ""))
   (lib (name "TC7S14F")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/TC7S14F/TC7S14F.pretty")(options "")(descr ""))
   (lib (name "A6S-3104-H")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/A6S-3104-H/A6S-3104-H.pretty")(options "")(descr ""))
+  (lib (name "NEO-M9N-00B")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/NEO-M9N-00B/NEO-M9N-00B.pretty")(options "")(descr ""))
+  (lib (name "SAM-M10Q-00B")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/SAM-M10Q-00B/SAM-M10Q-00B.pretty")(options "")(descr ""))
+  (lib (name "ML-1220_F1AN")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/ML-1220_F1AN/ML-1220_F1AN.pretty")(options "")(descr ""))
+  (lib (name "CUHS20S30")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/CUHS20S30/CUHS20S30.pretty")(options "")(descr ""))
 )

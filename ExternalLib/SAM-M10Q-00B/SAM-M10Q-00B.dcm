@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SAM-M10Q-00B
+D GNSS / GPS Modules M10 precision GNSS patch antenna module
+K
+F https://content.u-blox.com/sites/default/files/documents/SAM-M10Q_DataSheet_UBX-22013293.pdf
+$ENDCMP
+#
+#End Doc Library

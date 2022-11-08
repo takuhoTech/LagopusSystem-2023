@@ -15,3 +15,7 @@ I-14737                                      シュミットトリガインバ�
 I-16602                                      RS485 出力段
 https://jp.rs-online.com/web/p/dip-sip-switches/6821005              ＤＩＰスイッチ　3Ｐ
 C-02395                                      micro SD
+https://www.marutsu.co.jp/pc/i/29024330/     チップアンテナ
+www.amazon.co.jp/dp/B01N9YCTLF               パナソニック コイン充電池 ML1220 横型端子付き
+https://www.marutsu.co.jp/pc/i/42439094/     SAM-M10Q
+I-16304                                      ショットキーバリアダイオード

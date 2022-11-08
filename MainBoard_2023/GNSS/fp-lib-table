@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "SparkFun_Ublox SAM-M8Q")(type "KiCad")(uri "$(KIPRJMOD)/SparkFun_Ublox SAM-M8Q.pretty")(options "")(descr ""))
+)

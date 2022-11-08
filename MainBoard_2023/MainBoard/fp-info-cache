@@ -1,4 +1,4 @@
-20423273270027338
+20428276794320948
 A6S-3104-H
 A6S-3104-H
 A6S3104H
@@ -2421,6 +2421,13 @@ CC6-1203SR-E
 0
 7
 7
+CUHS20S30
+CUHS20S30
+CUHS20S40,H3F-2
+Schottky Diode
+0
+2
+2
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -50280,13 +50287,6 @@ DLW5BTM142TQ2
 0
 4
 4
-DM3AT-SF-PEJM5
-DM3AT-SF-PEJM5
-Micro SD card holder with push-to-eject feature.
-
-0
-14
-14
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -57756,6 +57756,13 @@ MAX9704
 0
 33
 33
+ML-1220_F1AN
+ML-1220_F1AN
+ML-1220/F1AN
+Battery
+0
+2
+2
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -60318,6 +60325,13 @@ Mounting 4.5mm 9774100982
 0
 8
 1
+NEO-M9N-00B
+NEO-M9N-00B
+
+
+0
+24
+24
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
@@ -79036,6 +79050,13 @@ rotary encoder
 0
 5
 4
+SAM-M10Q-00B
+SAM-M10Q-00B
+SAM-M10Q-00B-2
+Antenna
+0
+20
+20
 Seeed_Studio_XIAO_nRF52840_Sense
 Seeed_Studio_XIAO_nRF52840_Sense
 
