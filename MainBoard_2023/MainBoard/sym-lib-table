@@ -24,5 +24,7 @@
   (lib (name "SAM-M10Q-00B")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/SAM-M10Q-00B/SAM-M10Q-00B.kicad_sym")(options "")(descr ""))
   (lib (name "ML-1220_F1AN")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/ML-1220_F1AN/ML-1220_F1AN.lib")(options "")(descr ""))
   (lib (name "CUHS20S30")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/CUHS20S30/CUHS20S30.kicad_sym")(options "")(descr ""))
-  (lib (name "YDA142")(type "KiCad")(uri "D:/GitHub/LagopusSystem/ExternalLib/YDA142/YDA142.kicad_sym")(options "")(descr ""))
+  (lib (name "YDA142")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/YDA142/YDA142.kicad_sym")(options "")(descr ""))
+  (lib (name "A6S-7104-H")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/A6S-7104-H/A6S-7104-H.kicad_sym")(options "")(descr ""))
+  (lib (name "UFG1J221MHM")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/UFG1J221MHM/UFG1J221MHM.kicad_sym")(options "")(descr ""))
 )
