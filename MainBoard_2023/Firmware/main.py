@@ -10,9 +10,14 @@ https://electroniqueamateur.blogspot.com/2022/08/jouer-de-la-musique-fichiers-wa
 import os
 import time
 from machine import Pin, SPI
+import sys
 from wavplayer import WavPlayer # https://github.com/miketeachman/micropython-i2s-examples
 from sdcard import SDCard # https://github.com/micropython/micropython/blob/master/drivers/sdcard/sdcard.py
+import random
 
+
+#Serial = UART(0,9600)
+SWpin = machine.Pin(2, machine.Pin.IN, machine.Pin.PULL_UP)
 # lecteur de carte SD
 cs = Pin(13, Pin.OUT)
 spi = SPI(1, baudrate=1_000_000,  polarity=0,
@@ -26,12 +31,24 @@ os.mount(sd, "/sd")
 wp = WavPlayer(id=0, sck_pin=Pin(16),ws_pin=Pin(17),
     sd_pin=Pin(18),ibuf=40000,)
 
-# on joue chaque fichier .wav présent sur la carte SD
-for filename in (os.listdir("/sd")):
-    print("En train de jouer: ", filename)
-    #wp.play(filename, loop=False)
-    wp.play("1.wav", loop=False)
-    while wp.isplaying() == True:
-        pass
+"""
+while 1:
+    ret = sys.stdin.readline()
+    if ret != None:
+        ret = ret[:-1]
+        wp.play(ret, loop=False)
+        while wp.isplaying() == True:
+            pass
+"""
+
+while 1:
+    if SWpin.value() == 0:
+        file = str(random.randrange(1,15,1)) + ".wav"
+        try:
+            wp.play(file, loop=False)
+        except:
+            pass
+        while wp.isplaying() == True:
+            pass
 
 os.umount("/sd") 
