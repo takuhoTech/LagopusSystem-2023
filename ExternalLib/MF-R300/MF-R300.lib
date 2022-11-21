@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model MF-R300
+#/389489/960441/2.49/2/4/Fuse
+DEF MF-R300 F 0 30 Y Y 1 F N
+F0 "F" 550 250 50 H V L CNN
+F1 "MF-R300" 550 150 50 H V L CNN
+F2 "MFR300" 550 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/2/MF-R300.pdf" 550 -50 50 H I L CNN
+F4 "Bourns 3A Radial Leaded PCB Mount Resettable Fuse, 30 V" 550 -150 50 H I L CNN "Description"
+F5 "18.3" 550 -250 50 H I L CNN "Height"
+F6 "Bourns" 550 -350 50 H I L CNN "Manufacturer_Name"
+F7 "MF-R300" 550 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "652-MFR300" 550 -550 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Bourns/MF-R300?qs=ub8qiV7bXkZu3ApF4%2FM3Fg%3D%3D" 550 -650 50 H I L CNN "Mouser Price/Stock"
+F10 "MF-R300" 550 -750 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/mf-r300/bourns?region=europe" 550 -850 50 H I L CNN "Arrow Price/Stock"
+F12 "" 550 -950 50 H I L CNN "Mouser Testing Part Number"
+F13 "" 550 -1050 50 H I L CNN "Mouser Testing Price/Stock"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+P 2 0 1 6 200 0 500 0 N
+ENDDRAW
+ENDDEF
+#
+#End Library

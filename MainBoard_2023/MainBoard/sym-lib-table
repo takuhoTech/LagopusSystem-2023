@@ -28,4 +28,7 @@
   (lib (name "A6S-7104-H")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/A6S-7104-H/A6S-7104-H.kicad_sym")(options "")(descr ""))
   (lib (name "UFG1J221MHM")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/UFG1J221MHM/UFG1J221MHM.kicad_sym")(options "")(descr ""))
   (lib (name "ADS1120IPWR")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/ADS1120IPWR/ADS1120IPWR.kicad_sym")(options "")(descr ""))
+  (lib (name "MF-R300")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/MF-R300/MF-R300.lib")(options "")(descr ""))
+  (lib (name "NR10050T470M")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/NR10050T470M/NR10050T470M.lib")(options "")(descr ""))
+  (lib (name "MAX3485ECSA")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/MAX3485ECSA/MAX3485ECSA.kicad_sym")(options "")(descr ""))
 )
