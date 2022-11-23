@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ASMDC300F_24-2
+D Resettable Fuses - PPTC 3A 24VDC 40A 2920 AEC-Q200
+K
+F https://www.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_asmdc_datasheet.pdf.pdf
+$ENDCMP
+#
+#End Doc Library

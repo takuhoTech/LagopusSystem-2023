@@ -2145,7 +2145,7 @@
   (symbol (lib_id "power:+5VD") (at 173.99 92.71 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid f1b09723-1b61-44d9-995e-494a48cda336)
-    (property "Reference" "#PWR068" (id 0) (at 170.18 92.71 0)
+    (property "Reference" "#PWR067" (id 0) (at 170.18 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VD" (id 1) (at 176.53 92.71 90)

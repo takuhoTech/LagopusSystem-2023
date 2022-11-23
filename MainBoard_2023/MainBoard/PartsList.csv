@@ -39,6 +39,9 @@
 ,,P-15836,"オーディオ用電解コンデンサー　２２０μＦ６３Ｖ８５℃　ニチコンＦＧ",
 ,,I-15389,ADS1120IPWR,
 ,,I-09637,"表面実装　赤色ＬＥＤ　［３２１６］　６２０ｎｍ　３５度　ＯＳＲ５１２０６４１Ｅ　（１０個入）",
-,,P-12630,"リセッタブルヒューズ　３Ａ　トリップ電流：６Ａ　耐圧：３０Ｖ　ＭＦ－Ｒ３００",
+,,P-12630,"リセッタブルヒューズ　３Ａ　トリップ電流：６Ａ　耐圧：３０Ｖ　ＭＦ－Ｒ３００",買わない
 ,,https://jp.rs-online.com/web/p/pcb-headers/5128591,"PA 3P",
-,,https://jp.rs-online.com/web/p/pcb-headers/5128585,PA,
+,,https://jp.rs-online.com/web/p/pcb-headers/5128585,"PA 2P",
+,,https://jp.rs-online.com/web/p/pcb-headers/6028228,"XA 4P",
+,,https://www.marutsu.co.jp/pc/i/26261557/,"PTC RESET FUSE 24V 3A 2SMD【ASMDC300F/24-2】",
+,,https://jp.rs-online.com/web/p/pcb-headers/6028183,"XA 2P",
