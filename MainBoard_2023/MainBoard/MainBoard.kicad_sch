@@ -6274,28 +6274,28 @@
       (reference "J5") (unit 1) (value "Micro_SD_Card_Det_Hirose_DM3AT") (footprint "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5")
     )
     (path "/6a473b76-9def-47b1-bd12-ebbe49093892/d2f96110-4787-43a7-8aed-dcba99b56a31"
-      (reference "J6") (unit 1) (value "Conn_01x02") (footprint "B02B-PASK-1:B02B-PASK-1")
+      (reference "J6") (unit 1) (value "Conn_01x02") (footprint "Connector_JST:JST_XA_S02B-XASK-1_1x02_P2.50mm_Horizontal")
     )
     (path "/6a473b76-9def-47b1-bd12-ebbe49093892/51a064df-5c8c-4f74-98d0-b3878e7ceb88"
-      (reference "J7") (unit 1) (value "Conn_01x02") (footprint "B02B-PASK-1:B02B-PASK-1")
+      (reference "J7") (unit 1) (value "Conn_01x02") (footprint "Connector_JST:JST_XA_S02B-XASK-1_1x02_P2.50mm_Horizontal")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/5e3d7371-cb46-4980-8880-55c61f7a3d95"
-      (reference "J8") (unit 1) (value "Conn_01x04") (footprint "")
+      (reference "J8") (unit 1) (value "Conn_01x04") (footprint "Connector_JST:JST_XA_S04B-XASK-1_1x04_P2.50mm_Horizontal")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/c1571d41-a450-4732-9e3e-6ba9d56ba7cb"
-      (reference "J9") (unit 1) (value "Conn_01x04") (footprint "")
+      (reference "J9") (unit 1) (value "Conn_01x04") (footprint "Connector_JST:JST_XA_S04B-XASK-1_1x04_P2.50mm_Horizontal")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/04352a64-605d-45fc-ba0d-c38dd25bb0e4"
-      (reference "J10") (unit 1) (value "Conn_01x04") (footprint "")
+      (reference "J10") (unit 1) (value "Conn_01x04") (footprint "Connector_JST:JST_XA_S04B-XASK-1_1x04_P2.50mm_Horizontal")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/efc02d18-e7e7-4c28-adba-4a5e609eb72f"
-      (reference "J11") (unit 1) (value "Conn_01x04") (footprint "")
+      (reference "J11") (unit 1) (value "Conn_01x04") (footprint "Connector_JST:JST_XA_S04B-XASK-1_1x04_P2.50mm_Horizontal")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/6fa68275-5f30-4ec4-88d6-a7c412629b57"
-      (reference "J12") (unit 1) (value "Conn_01x04") (footprint "")
+      (reference "J12") (unit 1) (value "Conn_01x04") (footprint "Connector_JST:JST_XA_S04B-XASK-1_1x04_P2.50mm_Horizontal")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/aef8c8f0-6efb-43a7-8163-b138e804f4c3"
-      (reference "J13") (unit 1) (value "Conn_01x04") (footprint "")
+      (reference "J13") (unit 1) (value "Conn_01x04") (footprint "Connector_JST:JST_XA_S04B-XASK-1_1x04_P2.50mm_Horizontal")
     )
     (path "/a698e864-5ea2-4d35-b476-7712f47bb4e4/f5882a7a-aa98-4790-812d-a4ddb47bb927"
       (reference "J14") (unit 1) (value "Conn_01x03") (footprint "B03B-PASK-1:B03B-PASK-1")
