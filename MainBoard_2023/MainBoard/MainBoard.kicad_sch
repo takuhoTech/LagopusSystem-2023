@@ -6315,9 +6315,6 @@
     (path "/f85cf890-aa32-4504-b508-c8edf9387b44/da0f5952-3bf6-4daf-a137-51b27d41dc39"
       (reference "JP3") (unit 1) (value "SolderJumper") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
     )
-    (path "/f85cf890-aa32-4504-b508-c8edf9387b44/6a57f2c7-8f44-418f-8a49-c308f75a35d3"
-      (reference "JP4") (unit 1) (value "SolderJumper") (footprint "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels")
-    )
     (path "/c8d24f94-8173-4b16-af5a-1698d1012cbd"
       (reference "L1") (unit 1) (value "47μH") (footprint "NR10050T470M:NR10050T470M")
     )
@@ -6458,12 +6455,6 @@
     )
     (path "/f85cf890-aa32-4504-b508-c8edf9387b44/391713d9-8460-46ee-83d2-eb2d67e548f5"
       (reference "R45") (unit 1) (value "22") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
-    )
-    (path "/f85cf890-aa32-4504-b508-c8edf9387b44/5804632b-8765-4052-bbae-2269f72195cc"
-      (reference "R46") (unit 1) (value "470") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
-    )
-    (path "/f85cf890-aa32-4504-b508-c8edf9387b44/33c4b92e-dc64-4150-8d62-eece1365efad"
-      (reference "R47") (unit 1) (value "470") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/f85cf890-aa32-4504-b508-c8edf9387b44/dd4fafca-475f-444f-8534-da81163c80f3"
       (reference "R48") (unit 1) (value "2.2k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
