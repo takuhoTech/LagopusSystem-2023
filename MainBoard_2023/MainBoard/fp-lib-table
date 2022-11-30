@@ -36,4 +36,5 @@
   (lib (name "B03B-PASK-1")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/B03B-PASK-1/B03B-PASK-1.pretty")(options "")(descr ""))
   (lib (name "B02B-PASK-1")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/B02B-PASK-1/B02B-PASK-1.pretty")(options "")(descr ""))
   (lib (name "ASMDC300F_24-2")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/ASMDC300F_24-2/ASMDC300F_24-2.pretty")(options "")(descr ""))
+  (lib (name "Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector_6Ports")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector_6Ports/Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector_6Ports.pretty")(options "")(descr ""))
 )
