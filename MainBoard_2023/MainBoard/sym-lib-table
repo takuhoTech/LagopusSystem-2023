@@ -32,4 +32,5 @@
   (lib (name "NR10050T470M")(type "Legacy")(uri "${KIPRJMOD}/../../ExternalLib/NR10050T470M/NR10050T470M.lib")(options "")(descr ""))
   (lib (name "MAX3485ECSA")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/MAX3485ECSA/MAX3485ECSA.kicad_sym")(options "")(descr ""))
   (lib (name "Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector_6Ports")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector_6Ports/Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector_6Ports.kicad_sym")(options "")(descr ""))
+  (lib (name "Akizuki_BNO055")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Akizuki_BNO055/Akizuki_BNO055.kicad_sym")(options "")(descr ""))
 )

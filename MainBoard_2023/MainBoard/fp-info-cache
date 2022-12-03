@@ -1,4 +1,4 @@
-20648531157455866
+20650201701311741
 A6S-3104-H
 A6S-3104-H
 
@@ -41,6 +41,13 @@ Adafruit_BNO055_STEMMA_QT
 0
 14
 11
+Akizuki_BNO055
+Akizuki_BNO055
+8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
+THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
+0
+8
+8
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
