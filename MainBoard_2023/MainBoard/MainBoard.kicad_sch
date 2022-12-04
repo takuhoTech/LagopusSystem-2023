@@ -3541,7 +3541,7 @@
   (symbol (lib_id "Raspberry_Pi_Pico:SC0915") (at 250.19 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 14be386e-a3c0-4598-8b97-aa4d0351a613)
-    (property "Reference" "U4" (id 0) (at 250.825 19.1602 0))
+    (property "Reference" "U5" (id 0) (at 250.825 19.1602 0))
     (property "Value" "Pi Pico 0" (id 1) (at 250.825 21.6971 0))
     (property "Footprint" "Raspberry_Pi_Pico:Raspberry_Pi_Pico" (id 2) (at 238.76 66.04 0)
       (effects (font (size 1.27 1.27)) (justify left bottom) hide)
@@ -3764,7 +3764,7 @@
   (symbol (lib_id "RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top:RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top") (at 69.85 158.75 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 2ba53bb7-1045-4441-bf07-c007c131b968)
-    (property "Reference" "SW1" (id 0) (at 74.93 158.75 0)
+    (property "Reference" "S4" (id 0) (at 74.93 158.75 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "RS_PRO_Slide_Switch" (id 1) (at 64.77 156.21 0)
@@ -3784,7 +3784,7 @@
   (symbol (lib_id "Akizuki_BNO055:Akizuki_BNO055") (at 38.1 116.84 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 2e66279b-9e64-4d12-83bb-181f09223ebb)
-    (property "Reference" "U2" (id 0) (at 38.1 107.95 0))
+    (property "Reference" "U3" (id 0) (at 38.1 107.95 0))
     (property "Value" "BNO055" (id 1) (at 38.1 110.49 0))
     (property "Footprint" "Akizuki_BNO055:Akizuki_BNO055" (id 2) (at 38.1 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3990,8 +3990,8 @@
   (symbol (lib_id "Seeed_Studio_XIAO_nRF52840_Sense:Seeed_Studio_XIAO_nRF52840_Sense") (at 198.12 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 3ff99bc4-fcbb-4818-8b05-ecfe050cac48)
-    (property "Reference" "U3" (id 0) (at 197.485 31.9872 0))
-    (property "Value" "Seeed_Studio_XIAO_nRF52840_Sense" (id 1) (at 197.485 34.5241 0))
+    (property "Reference" "U4" (id 0) (at 197.485 30.48 0))
+    (property "Value" "XIAO" (id 1) (at 197.485 33.02 0))
     (property "Footprint" "Seeed_Studio_XIAO_nRF52840_Sense:Seeed_Studio_XIAO_nRF52840_Sense" (id 2) (at 189.23 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4119,7 +4119,7 @@
   (symbol (lib_id "Raspberry_Pi_Pico:SC0915") (at 250.19 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 48ed93ac-682a-4b2a-a871-860ff007f015)
-    (property "Reference" "U5" (id 0) (at 250.825 89.0102 0))
+    (property "Reference" "U6" (id 0) (at 250.825 89.0102 0))
     (property "Value" "Pi Pico 1" (id 1) (at 250.825 91.5471 0))
     (property "Footprint" "Raspberry_Pi_Pico:Raspberry_Pi_Pico" (id 2) (at 238.76 135.89 0)
       (effects (font (size 1.27 1.27)) (justify left bottom) hide)
@@ -4583,7 +4583,7 @@
   (symbol (lib_id "IP2721:IP2721D") (at 33.02 171.45 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 7bc22fed-beb6-4e1a-8119-b4e39cb6d52a)
-    (property "Reference" "IC1" (id 0) (at 44.45 167.64 0))
+    (property "Reference" "U2" (id 0) (at 44.45 167.64 0))
     (property "Value" "IP2721D" (id 1) (at 50.8 167.64 0))
     (property "Footprint" "IP2721:IP2721" (id 2) (at 59.69 168.91 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
@@ -4847,7 +4847,7 @@
     (in_bom yes) (on_board yes)
     (uuid a2388978-fd17-4993-a4f9-c3a9179d6dfc)
     (property "Reference" "J1" (id 0) (at 20.32 142.24 0))
-    (property "Value" "UJC-HP-3-SMT-TR" (id 1) (at 31.75 142.24 0))
+    (property "Value" "USB PD" (id 1) (at 27.94 142.24 0))
     (property "Footprint" "USB_TypeC_6PIN:USB_TypeC_6PIN" (id 2) (at 27.94 151.13 0)
       (effects (font (size 1.27 1.27)) (justify left bottom) hide)
     )
@@ -6277,10 +6277,10 @@
       (reference "#PWR0136") (unit 1) (value "+3.3V") (footprint "")
     )
     (path "/f85cf890-aa32-4504-b508-c8edf9387b44/c65e2d05-742a-49dc-bab5-27309d0aeb2f"
-      (reference "ANT1") (unit 1) (value "SAM-M10Q-00B") (footprint "SAM-M10Q-00B:SAM-M10Q-00B")
+      (reference "ANT1") (unit 1) (value "SAM-M10Q") (footprint "SAM-M10Q-00B:SAM-M10Q-00B")
     )
     (path "/f85cf890-aa32-4504-b508-c8edf9387b44/beb2534f-787c-4f70-ad66-4383f30c6058"
-      (reference "BT1") (unit 1) (value "ML-1220_F1AN") (footprint "ML-1220_F1AN:ML-1220_F1AN")
+      (reference "BT1") (unit 1) (value "ML1220") (footprint "ML-1220_F1AN:ML-1220_F1AN")
     )
     (path "/a96dc772-4cb9-4e91-80d5-bc85b1486d9b"
       (reference "C1") (unit 1) (value "1μ") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
@@ -6361,7 +6361,7 @@
       (reference "D1") (unit 1) (value "CUHS20S30,H3F") (footprint "CUHS20S30:CUHS20S30")
     )
     (path "/f85cf890-aa32-4504-b508-c8edf9387b44/fcb1fc09-ad18-4d40-9e72-50a0e0b0c642"
-      (reference "D2") (unit 1) (value "LED_Small") (footprint "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder")
+      (reference "D2") (unit 1) (value "PPS") (footprint "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder")
     )
     (path "/46543336-267d-43e5-b831-f6df35ec81a6"
       (reference "F1") (unit 1) (value "Polyfuse") (footprint "ASMDC300F_24-2:ASMDC300F_24-2")
@@ -6372,14 +6372,8 @@
     (path "/c348c6b1-9a4a-4b9c-8599-f012c498905b"
       (reference "FL2") (unit 1) (value "BNX025H01L") (footprint "BNX025H01:BNX025H01")
     )
-    (path "/7bc22fed-beb6-4e1a-8119-b4e39cb6d52a"
-      (reference "IC1") (unit 1) (value "IP2721D") (footprint "IP2721:IP2721")
-    )
-    (path "/a698e864-5ea2-4d35-b476-7712f47bb4e4/da6a917c-e84a-41a4-ba47-eb6bf0ce1682"
-      (reference "IC2") (unit 1) (value "ADS1120IPWR") (footprint "ADS1120IPWR:ADS1120IPWR")
-    )
     (path "/a2388978-fd17-4993-a4f9-c3a9179d6dfc"
-      (reference "J1") (unit 1) (value "UJC-HP-3-SMT-TR") (footprint "USB_TypeC_6PIN:USB_TypeC_6PIN")
+      (reference "J1") (unit 1) (value "USB PD") (footprint "USB_TypeC_6PIN:USB_TypeC_6PIN")
     )
     (path "/b4fd5145-d672-45b2-af6d-09d71c30c122"
       (reference "J2") (unit 1) (value "Conn_01x03") (footprint "B03B-PASK-1:B03B-PASK-1")
@@ -6591,53 +6585,59 @@
     (path "/aa422979-3a6d-46ba-8f8a-073665f9f40c"
       (reference "S3") (unit 1) (value "B3AL") (footprint "B3AL-1002P-MS:B3AL-1002P-MS")
     )
-    (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/fc0e0df3-49e3-4c23-be5b-abda2c8a8c68"
-      (reference "S4") (unit 1) (value "A6S3104H") (footprint "A6S-3104-H:A6S-3104-H")
-    )
     (path "/2ba53bb7-1045-4441-bf07-c007c131b968"
-      (reference "SW1") (unit 1) (value "RS_PRO_Slide_Switch") (footprint "RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top:RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top")
+      (reference "S4") (unit 1) (value "RS_PRO_Slide_Switch") (footprint "RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top:RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top")
     )
     (path "/6a473b76-9def-47b1-bd12-ebbe49093892/a0abd0b9-06e2-4001-8134-c9815ffb8734"
-      (reference "SW2") (unit 1) (value "A6S-7104-H") (footprint "A6S-7104-H:A6S-7104-H")
+      (reference "S5") (unit 1) (value "A6S-7104-H") (footprint "A6S-7104-H:A6S-7104-H")
+    )
+    (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/fc0e0df3-49e3-4c23-be5b-abda2c8a8c68"
+      (reference "S6") (unit 1) (value "A6S3104H") (footprint "A6S-3104-H:A6S-3104-H")
     )
     (path "/5191b0dd-08a0-48e6-8519-2366babca68f"
       (reference "U1") (unit 1) (value "ICP-10111") (footprint "Fermion_Pressure_Sensor_ICP_10111:Fermion_Pressure_Sensor_ICP_10111")
     )
+    (path "/7bc22fed-beb6-4e1a-8119-b4e39cb6d52a"
+      (reference "U2") (unit 1) (value "IP2721D") (footprint "IP2721:IP2721")
+    )
     (path "/2e66279b-9e64-4d12-83bb-181f09223ebb"
-      (reference "U2") (unit 1) (value "BNO055") (footprint "Akizuki_BNO055:Akizuki_BNO055")
+      (reference "U3") (unit 1) (value "BNO055") (footprint "Akizuki_BNO055:Akizuki_BNO055")
     )
     (path "/3ff99bc4-fcbb-4818-8b05-ecfe050cac48"
-      (reference "U3") (unit 1) (value "Seeed_Studio_XIAO_nRF52840_Sense") (footprint "Seeed_Studio_XIAO_nRF52840_Sense:Seeed_Studio_XIAO_nRF52840_Sense")
+      (reference "U4") (unit 1) (value "XIAO") (footprint "Seeed_Studio_XIAO_nRF52840_Sense:Seeed_Studio_XIAO_nRF52840_Sense")
     )
     (path "/14be386e-a3c0-4598-8b97-aa4d0351a613"
-      (reference "U4") (unit 1) (value "Pi Pico 0") (footprint "Raspberry_Pi_Pico:Raspberry_Pi_Pico")
+      (reference "U5") (unit 1) (value "Pi Pico 0") (footprint "Raspberry_Pi_Pico:Raspberry_Pi_Pico")
     )
     (path "/48ed93ac-682a-4b2a-a871-860ff007f015"
-      (reference "U5") (unit 1) (value "Pi Pico 1") (footprint "Raspberry_Pi_Pico:Raspberry_Pi_Pico")
+      (reference "U6") (unit 1) (value "Pi Pico 1") (footprint "Raspberry_Pi_Pico:Raspberry_Pi_Pico")
     )
     (path "/6a473b76-9def-47b1-bd12-ebbe49093892/d4760016-19c4-42b8-a37d-f3df05c0496e"
-      (reference "U6") (unit 1) (value "YDA142") (footprint "YDA142:YDA142")
+      (reference "U7") (unit 1) (value "YDA142") (footprint "YDA142:YDA142")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/cc972d28-908b-41a1-9f3b-d545f3aaeb40"
-      (reference "U7") (unit 1) (value "MAX3485") (footprint "MAX3485ECSA:MAX3485ECSA")
+      (reference "U8") (unit 1) (value "MAX3485") (footprint "MAX3485ECSA:MAX3485ECSA")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/e5f0d2d2-0c1e-45b1-a504-85a89648e051"
-      (reference "U8") (unit 1) (value "TC7S14F") (footprint "TC7S14F:TC7S14F")
+      (reference "U9") (unit 1) (value "TC7S14F") (footprint "TC7S14F:TC7S14F")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/bd02e4dd-3d59-4efc-9c1d-18d784fef2cc"
-      (reference "U9") (unit 1) (value "LTC1480CN8#PBF") (footprint "Package_DIP:DIP-8_W7.62mm_LongPads")
+      (reference "U10") (unit 1) (value "LTC1480CN8#PBF") (footprint "Package_DIP:DIP-8_W7.62mm_LongPads")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/b65d99ac-99bd-4888-84d7-413f954a898f"
-      (reference "U10") (unit 1) (value "MAX3485") (footprint "MAX3485ECSA:MAX3485ECSA")
+      (reference "U11") (unit 1) (value "MAX3485") (footprint "MAX3485ECSA:MAX3485ECSA")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/51c82790-8ed3-46aa-be36-22fd8517e36c"
-      (reference "U11") (unit 1) (value "LTC1480CN8#PBF") (footprint "Package_DIP:DIP-8_W7.62mm_LongPads")
+      (reference "U12") (unit 1) (value "LTC1480CN8#PBF") (footprint "Package_DIP:DIP-8_W7.62mm_LongPads")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/a1122634-775a-46f3-987b-36d156968557"
-      (reference "U12") (unit 1) (value "MAX3485") (footprint "MAX3485ECSA:MAX3485ECSA")
+      (reference "U13") (unit 1) (value "MAX3485") (footprint "MAX3485ECSA:MAX3485ECSA")
     )
     (path "/8f1460a1-bf5a-4b04-9570-47768632e84c/3ef87d4c-73b2-4ae8-b991-7c23d306a0e6"
-      (reference "U13") (unit 1) (value "LTC1480CN8#PBF") (footprint "Package_DIP:DIP-8_W7.62mm_LongPads")
+      (reference "U14") (unit 1) (value "LTC1480CN8#PBF") (footprint "Package_DIP:DIP-8_W7.62mm_LongPads")
+    )
+    (path "/a698e864-5ea2-4d35-b476-7712f47bb4e4/da6a917c-e84a-41a4-ba47-eb6bf0ce1682"
+      (reference "U15") (unit 1) (value "ADS1120IPWR") (footprint "ADS1120IPWR:ADS1120IPWR")
     )
     (path "/5d211f61-54bd-4b78-a50b-2f1f8ec59693"
       (reference "VR1") (unit 1) (value "LT1963AEST-3.3#PBF") (footprint "LT1963AEST-3.3_PBF:LT1963AEST-3.3_PBF")
