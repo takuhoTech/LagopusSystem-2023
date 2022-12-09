@@ -3764,7 +3764,7 @@
     (property "Reference" "S4" (id 0) (at 74.93 158.75 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "RS_PRO_Slide_Switch" (id 1) (at 64.77 156.21 0)
+    (property "Value" "POWER" (id 1) (at 66.04 156.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top:RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top" (id 2) (at 69.85 167.64 0)
@@ -6540,7 +6540,7 @@
       (reference "S3") (unit 1) (value "B3AL") (footprint "B3AL-1002P-MS:B3AL-1002P-MS")
     )
     (path "/2ba53bb7-1045-4441-bf07-c007c131b968"
-      (reference "S4") (unit 1) (value "RS_PRO_Slide_Switch") (footprint "RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top:RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top")
+      (reference "S4") (unit 1) (value "POWER") (footprint "RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top:RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top")
     )
     (path "/6a473b76-9def-47b1-bd12-ebbe49093892/a0abd0b9-06e2-4001-8134-c9815ffb8734"
       (reference "S5") (unit 1) (value "A6S-7104-H") (footprint "A6S-7104-H:A6S-7104-H")
