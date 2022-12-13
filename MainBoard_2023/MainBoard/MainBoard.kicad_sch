@@ -6365,9 +6365,6 @@
     (path "/080b7699-331f-485b-9bce-e9e9f54b05f6"
       (reference "JP2") (unit 1) (value "Jumper") (footprint "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels")
     )
-    (path "/f85cf890-aa32-4504-b508-c8edf9387b44/da0f5952-3bf6-4daf-a137-51b27d41dc39"
-      (reference "JP3") (unit 1) (value "SolderJumper") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
-    )
     (path "/c8d24f94-8173-4b16-af5a-1698d1012cbd"
       (reference "L1") (unit 1) (value "47μH") (footprint "NR10050T470M:NR10050T470M")
     )
