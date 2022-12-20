@@ -1,7 +1,7 @@
 (footprint "Raspberry_Pi_Pico" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 634E46EB)
-  (attr through_hole)
+  (attr smd)
   (fp_text reference "REF**" (at -8.325 -28.635) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 132aa266-368f-41b7-abdc-e836c3700ff2)
@@ -5872,7 +5872,6 @@
         ) (width 0.01) (fill yes))
     ) (tstamp 129a0889-43dd-4b14-8d4c-0f5b8e5157fa))
   (pad "3" smd custom (at -9.69 -19.05) (size 1 1) (layers "F.Cu")
-    (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly (pts
@@ -6228,7 +6227,6 @@
         ) (width 0.01) (fill yes))
     ) (tstamp d65d4350-2d99-4885-9698-e82b9c8b8e2c))
   (pad "8" smd custom (at -9.69 -6.35) (size 1 1) (layers "F.Cu")
-    (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly (pts
@@ -6584,7 +6582,6 @@
         ) (width 0.01) (fill yes))
     ) (tstamp e93368ac-c5c1-4729-9e88-73684b766fd2))
   (pad "13" smd custom (at -9.69 6.35) (size 1 1) (layers "F.Cu")
-    (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly (pts
@@ -6940,7 +6937,6 @@
         ) (width 0.01) (fill yes))
     ) (tstamp 2ecef203-470c-459a-83ef-76203275777c))
   (pad "18" smd custom (at -9.69 19.05) (size 1 1) (layers "F.Cu")
-    (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly (pts
@@ -7296,7 +7292,6 @@
         ) (width 0.01) (fill yes))
     ) (tstamp 2eb1d8a7-e4ed-47d1-adf6-b62e272a1710))
   (pad "23" smd custom (at 9.69 19.05) (size 1 1) (layers "F.Cu")
-    (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly (pts
@@ -7652,7 +7647,6 @@
         ) (width 0.01) (fill yes))
     ) (tstamp dc4de0cf-ad5e-4945-831f-a6157b38db9d))
   (pad "28" smd custom (at 9.69 6.35) (size 1 1) (layers "F.Cu")
-    (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly (pts
@@ -8008,7 +8002,6 @@
         ) (width 0.01) (fill yes))
     ) (tstamp a84412c8-a46c-40c8-b1bb-af19a3294c70))
   (pad "33" smd custom (at 9.69 -6.35) (size 1 1) (layers "F.Cu")
-    (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly (pts
@@ -8293,7 +8286,6 @@
         ) (width 0.01) (fill yes))
     ) (tstamp 7c07a208-bf9f-4b1a-b1ec-577b17f7c83e))
   (pad "37" smd custom (at 9.69 -16.51) (size 1 1) (layers "F.Cu")
-    (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly (pts
@@ -8364,7 +8356,6 @@
         ) (width 0.01) (fill yes))
     ) (tstamp 621179dc-3979-49cc-ab91-6ad89c0d2bf8))
   (pad "38" smd custom (at 9.69 -19.05) (size 1 1) (layers "F.Cu")
-    (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly (pts
@@ -8649,7 +8640,6 @@
         ) (width 0.01) (fill yes))
     ) (tstamp 5f424a85-7873-4b66-8cc1-091ffdfb3ce7))
   (pad "D2" smd custom (at 0 24.7) (size 1 1) (layers "F.Cu")
-    (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly (pts
