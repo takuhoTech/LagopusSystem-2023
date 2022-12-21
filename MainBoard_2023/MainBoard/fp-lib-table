@@ -38,4 +38,6 @@
   (lib (name "ASMDC300F_24-2")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/ASMDC300F_24-2/ASMDC300F_24-2.pretty")(options "")(descr ""))
   (lib (name "Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector_6Ports")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector_6Ports/Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector_6Ports.pretty")(options "")(descr ""))
   (lib (name "Akizuki_BNO055")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Akizuki_BNO055/Akizuki_BNO055.pretty")(options "")(descr ""))
+  (lib (name "img_RaspberryPi")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/img_RaspberryPi/img_RaspberryPi.pretty")(options "")(descr ""))
+  (lib (name "img_ConnectorRJ")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/img_ConnectorRJ/img_ConnectorRJ.pretty")(options "")(descr ""))
 )
