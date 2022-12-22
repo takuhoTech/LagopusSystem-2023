@@ -40,4 +40,5 @@
   (lib (name "Akizuki_BNO055")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/Akizuki_BNO055/Akizuki_BNO055.pretty")(options "")(descr ""))
   (lib (name "img_RaspberryPi")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/img_RaspberryPi/img_RaspberryPi.pretty")(options "")(descr ""))
   (lib (name "img_ConnectorRJ")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/img_ConnectorRJ/img_ConnectorRJ.pretty")(options "")(descr ""))
+  (lib (name "img_lagopus2017")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/img_lagopus2017/img_lagopus2017.pretty")(options "")(descr ""))
 )
