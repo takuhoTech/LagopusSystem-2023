@@ -1,6 +1,6 @@
 リファレンス,値,コンポーネント,フットプリント,最小数,秋月,マルツ,RS,Amazon,SS,check
 "ANT1, ",SAM-M10Q,SAM-M10Q-00B,SAM-M10Q-00B:SAM-M10Q-00B,1,,https://www.marutsu.co.jp/pc/i/42439094/,,,,
-"BT1, ",ML1220,ML-1220_F1AN,ML-1220_F1AN:ML-1220_F1AN,1,,,,www.amazon.co.jp/dp/B01N9YCTLF,,
+"BT1, ",ML1220,ML-1220_F1AN,ML-1220_F1AN:ML-1220_F1AN,1,,,,www.amazon.co.jp/dp/B01N9YCTLF,,y
 "C6, C7, ",10μ,C_Polarized_Small,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,2,P-15828,,,,,
 "C8, ",47μ,C_Polarized_Small,Capacitor_THT:CP_Radial_D10.0mm_P5.00mm,1,P-15832,,,,,
 "C9, C16, ",220μ,C_Polarized_Small,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,2,P-15836,,,,,
@@ -11,7 +11,7 @@
 "FL2, ",BNX025H01L,BNX025H01L,BNX025H01:BNX025H01,1,,https://www.marutsu.co.jp/pc/i/15910225/,,,,
 "J1, ","USB PD",UJC-HP-3-SMT-TR,USB_TypeC_6PIN:USB_TypeC_6PIN,1,C-16438,,,,,
 "J2, J9, J10, J11, ",Conn_01x03,Conn_01x03,B03B-PASK-1:B03B-PASK-1,4,,,https://jp.rs-online.com/web/p/pcb-headers/5128591,,,
-"J3, ",Conn_01x02,Conn_01x02,Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal,1,,,,www.amazon.co.jp/dp/B09XHLZRTX,,
+"J3, ",Conn_01x02,Conn_01x02,Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal,1,,,,www.amazon.co.jp/dp/B09XHLZRTX,,y
 "J4, J5, ",Micro_SD_Card_Det_Hirose_DM3AT,Micro_SD_Card_Det_Hirose_DM3AT,Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5,2,C-02395,,,,,
 "J6, J7, ",Conn_01x02,Conn_01x02,Connector_JST:JST_XA_S02B-XASK-1_1x02_P2.50mm_Horizontal,2,,,https://jp.rs-online.com/web/p/pcb-headers/6028183,,,
 "J8, ",43223-6113,43223-6113,Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector_6Ports:Molex_6P6C_Right_Angle_TH_RJ11_Modular_Jack_Connector,1,,https://www.digikey.jp/ja/products/detail/molex/0432236113/505905,,,,
@@ -22,7 +22,7 @@
 "S5, ",A6S-7104-H,A6S-7104-H,A6S-7104-H:A6S-7104-H,1,,https://www.marutsu.co.jp/GoodsDetail.jsp?q=A6S-7104-H&salesGoodsCode=31581594&shopNo=3,,,,
 "S6, ",A6S3104H,A6S3104H,A6S-3104-H:A6S-3104-H,1,,,https://jp.rs-online.com/web/p/dip-sip-switches/6821005,,,
 "U1, ",ICP-10111,SEN0516,Fermion_Pressure_Sensor_ICP_10111:Fermion_Pressure_Sensor_ICP_10111,1,,,,,ICP-10111,
-"U2, ",IP2721D,IP2721D,IP2721:IP2721,1,,,,www.amazon.co.jp/dp/B09R436NCP,,
+"U2, ",IP2721D,IP2721D,IP2721:IP2721,1,,,,www.amazon.co.jp/dp/B09R436NCP,,y
 "U3, ",BNO055,Akizuki_BNO055,Akizuki_BNO055:Akizuki_BNO055,1,K-16996,,,,,
 "U7, ",YDA142,YDA142,YDA142:YDA142,1,I-11089,,,,,
 "U8, U11, U13, ",MAX3485,MAX3485,MAX3485ECSA:MAX3485ECSA,3,I-16211,,,,,
@@ -32,3 +32,9 @@
 "VR1, ",LT1963AEST-3.3#PBF,LT1963AEST-3.3#PBF,LT1963AEST-3.3_PBF:LT1963AEST-3.3_PBF,1,I-16060,,,,,
 ,,,S2B-PH-SM4-TB,1,C-12810,,,,,
 ,,,ADS122U04IPWR,1,,https://www.marutsu.co.jp/pc/i/30458555/,,,,
+,,,"1000pF 1608",,P-14581,,,,,
+,,,"0.47uF 1608",,,https://www.marutsu.co.jp/pc/i/2260446/,,,,
+,,,"1uF 1608",,P-16994,,,,,
+,,,"4.7uF 1608",,P-09218,,,,,
+,,,"0.1uF 1608",,P-16143,,,,,
+,,,"0.01uF 1608",,P-13387,,,,,
