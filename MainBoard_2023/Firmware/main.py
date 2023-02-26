@@ -42,13 +42,14 @@ while 1:
 """
 
 while 1:
-    if SWpin.value() == 0:
-        file = str(random.randrange(1,15,1)) + ".wav"
-        try:
-            wp.play(file, loop=False)
-        except:
-            pass
-        while wp.isplaying() == True:
-            pass
+    file = str(random.randrange(1,15,1)) + ".wav"
+    try:
+        print("try")
+        wp.play(file, loop=False)
+        print("playing")
+    except:
+        pass
+    while wp.isplaying() == True:
+        pass
 
 os.umount("/sd") 

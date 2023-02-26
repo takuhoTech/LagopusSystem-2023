@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP TM5RJ3-64_50_
+D Modular connector,Jack,4 pin
+K
+F http://uk.rs-online.com/web/p/products/7644818
+$ENDCMP
+#
+$CMP RK09K1130A8G
+D Alps Electric RK09K1130A8G 1 Gang Rotary Potentiometer with a 6 mm Dia. Shaft, 10k, +/-20%, 0.05W, Linear
+K
+F http://uk.rs-online.com/web/p/products/1726248
+$ENDCMP
+#
+#End Doc Library
