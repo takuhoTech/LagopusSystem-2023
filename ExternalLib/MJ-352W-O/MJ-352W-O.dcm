@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MJ352W-0
+D Kobiconn Socket, 3.5mm Jack, 3 Pole
+K
+F http://www.farnell.com/datasheets/3013749.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RJ-2410N
+D RCA Jack-P>C>B Mount, Red
+K
+F http://akizukidenshi.com/download/RJ-2410N_R.pdf
+$ENDCMP
+#
+#End Doc Library
