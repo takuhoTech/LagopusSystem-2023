@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 66f0b96b-7ab7-44c4-9650-82af0064d868)
   )
-  (fp_text value "BNO055" (at 0 0 90) (layer "F.SilkS")
+  (fp_text value "BNO055" (at 0 0 90) (layer "F.SilkS") hide
     (effects (font (size 2 1.7) (thickness 0.3)))
     (tstamp 6a869024-40fe-4925-9ca6-a7d9cae77145)
   )
