@@ -771,6 +771,15 @@
     (uuid e1fd8233-d04b-4f40-82aa-9fb0871b5e74)
   )
 
+  (label "RS485_B" (at 199.39 78.74 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid e08ca72d-8ae3-4c7d-87bb-0039ae8cb3bc)
+  )
+  (label "RS485_A" (at 196.85 78.74 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid f813ef09-bd9a-4f90-a3d9-4deae0b323e4)
+  )
+
   (hierarchical_label "CTRL" (shape passive) (at 196.85 114.3 270)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 3a7b311d-fb36-4ec5-b0ac-63b14fadd1ee)
