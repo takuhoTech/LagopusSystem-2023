@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FS3000-1015
+D Air Velocity Sensor Module Digital output: I2C Supply voltage: 3.3V, -20C to+85C, Module size: 8  9  3.7mm
+K
+F https://www.renesas.com/us/en/document/dst/fs3000-datasheet?r=1395551
+$ENDCMP
+#
+#End Doc Library

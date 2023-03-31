@@ -1,24 +1,25 @@
-"Source:","D:\GitHub\LagopusSystem\MainBoard_2023\Meishi\MainBoard.kicad_sch"
-"Date:","2023/03/12 14:17:16"
-"Tool:","Eeschema (6.0.9)"
-"Generator:","D:\KiCad\6.0\bin\scripting\plugins/bom_csv_grouped_by_value_with_fp.py"
-"Component Count:","32"
-"Ref","Qnty","Value","Cmp name","Footprint","Description","Vendor"
-"C1, C8, ","2","220μ","C_Polarized_Small","Capacitor_THT:CP_Radial_D12.5mm_P5.00mm","Polarized capacitor, small symbol",""
-"C2, C3, C4, C5, C6, C7, C9, ","7","1μ","C_Small","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","Unpolarized capacitor, small symbol",""
-"C10, C11, ","2","1000u","C_Small","Capacitor_THT:C_Radial_D16.0mm_H31.5mm_P7.50mm","Unpolarized capacitor, small symbol",""
-"F1, ","1","Polyfuse","Polyfuse_Small","MF-R300:MF-R300","Resettable fuse, polymeric positive temperature coefficient, small symbol",""
-"FL1, ","1","DLW5BTM142TQ2L","DLW5BTM142TQ2L","DLW5BTM142TQ2:DLW5BTM142TQ2","",""
-"FL2, ","1","BNX025H01L","BNX025H01L","BNX025H01:BNX025H01","",""
-"J1, ","1","MJ-179PH7","MJ-179PH7","MJ-179PH7:MJ-179PH7","",""
-"J2, J3, ","2","RJ-2410N","RJ-2410N","RJ-2410N:RJ-2410N","RCA Jack-P>C>B Mount, Red",""
-"J4, ","1","MJ352W-0","MJ352W-0","MJ-352W-O:MJ-352W-O","Kobiconn Socket, 3.5mm Jack, 3 Pole",""
-"R1, R2, R3, ","3","22","R_Small","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","Resistor, small symbol",""
-"R4, ","1","RK09K1130A8G","RK09K1130A8G","RK09K1130A8G:RK09K1130A8G","",""
-"R5, ","1","100k","R_Small","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","Resistor, small symbol",""
-"R6, R7, ","2","20","R_Small","Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal","Resistor, small symbol",""
-"R8, R9, ","2","180","R_Small","Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal","Resistor, small symbol",""
-"R10, R11, ","2","56","R_Small","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","Resistor, small symbol",""
-"S1, ","1","POWER","RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top","RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top:RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top","",""
-"U1, ","1","Pi Pico 1","SC0915","Raspberry_Pi_Pico:Raspberry_Pi_Pico","",""
-"U2, ","1","YDA142","YDA142","YDA142:YDA142","",""
+Source:,D:\GitHub\LagopusSystem\MainBoard_2023\Meishi\MainBoard.kicad_sch,,,,
+Date:,"2023/03/12 14:17:16",,,,
+Tool:,"Eeschema (6.0.9)",,,,
+Generator:,D:\KiCad\6.0\bin\scripting\plugins/bom_csv_grouped_by_value_with_fp.py,,,,
+"Component Count:",32,,,,
+Ref,Qnty,Value,"Cmp name",Footprint,Description,Vendor,,,,
+"C1, C8, ",2,220μ,C_Polarized_Small,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,"Polarized capacitor, small symbol",,,,,
+"C2, C3, C4, C5, C6, C7, C9, ",7,1μ,C_Small,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,"Unpolarized capacitor, small symbol",,,,,
+"C10, C11, ",2,1000u,C_Small,Capacitor_THT:C_Radial_D16.0mm_H31.5mm_P7.50mm,"Unpolarized capacitor, small symbol",,,,,
+"F1, ",1,Polyfuse,Polyfuse_Small,MF-R300:MF-R300,"Resettable fuse, polymeric positive temperature coefficient, small symbol",,,,,
+"FL1, ",1,DLW5BTM142TQ2L,DLW5BTM142TQ2L,DLW5BTM142TQ2:DLW5BTM142TQ2,,,,,,
+"FL2, ",1,BNX025H01L,BNX025H01L,BNX025H01:BNX025H01,,,,,,
+"J1, ",1,MJ-179PH7,MJ-179PH7,MJ-179PH7:MJ-179PH7,,,,,,
+"J2, J3, ",2,RJ-2410N,RJ-2410N,RJ-2410N:RJ-2410N,"RCA Jack-P>C>B Mount, Red",,,,,
+"J4, ",1,MJ352W-0,MJ352W-0,MJ-352W-O:MJ-352W-O,"Kobiconn Socket, 3.5mm Jack, 3 Pole",,,,,
+"R1, R2, R3, ",3,22,R_Small,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,"Resistor, small symbol",,,,,
+"R4, ",1,RK09K1130A8G,RK09K1130A8G,RK09K1130A8G:RK09K1130A8G,,,,,,
+"R5, ",1,100k,R_Small,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,"Resistor, small symbol",,,,,
+"R6, R7, ",2,20,R_Small,Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal,"Resistor, small symbol",,,,,
+"R8, R9, ",2,180,R_Small,Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal,"Resistor, small symbol",,,,,
+"R10, R11, ",2,56,R_Small,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,"Resistor, small symbol",,,,,
+"S1, ",1,POWER,RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top,RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top:RS_PRO_PCB_Slide_Switch_SPDT_Latching_3A_120V_ac_Top,,,,,,
+"U1, ",1,"Pi Pico 1",SC0915,Raspberry_Pi_Pico:Raspberry_Pi_Pico,,,,,,
+"U2, ",1,YDA142,YDA142,YDA142:YDA142,,,,,,
+,,,,,
