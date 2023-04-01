@@ -1,0 +1,44 @@
+M48
+; DRILL file {KiCad (6.0.9)} date Sat Apr  1 11:23:55 2023
+; FORMAT={2:4/ absolute / inch / suppress leading zeros}
+; #@! TF.CreationDate,2023-04-01T11:23:55+09:00
+; #@! TF.GenerationSoftware,Kicad,Pcbnew,(6.0.9)
+; #@! TF.FileFunction,MixedPlating,1,2
+FMAT,2
+INCH,TZ
+; #@! TA.AperFunction,Plated,PTH,ViaDrill
+T1C0.0118
+; #@! TA.AperFunction,NonPlated,NPTH,ComponentDrill
+T2C0.0866
+%
+G90
+G05
+T1
+X-3850Y-4300
+X-3550Y-5600
+X-2500Y350
+X-2300Y-2200
+X-2100Y-1200
+X-1650Y-2600
+X-1500Y-3350
+X-1500Y-4200
+X-1300Y-1900
+X-1100Y-800
+X-450Y-5150
+X-400Y-4200
+X-100Y-1800
+X320Y-2560
+X500Y-5700
+X840Y-3220
+X900Y-5580
+X1530Y-3860
+X1580Y-2520
+X2100Y-3150
+X2460Y-4800
+X3450Y-5500
+X3850Y-4300
+T2
+X-4528Y-5118
+X4528Y-5118
+T0
+M30
