@@ -1,0 +1,9 @@
+Serial1.write(0x4E);//7:0(01001110=0x4E)[7-4:AINp=AIN1 AINn=AIN2|3-1:GAIN128|0:PGA enable]
+
+Serial1.write(0x78);//7:0(01111000=0x78)[7-5:DataRate350sps|4:Turbo mode|3:Continuous conversion mode|2-1:Internal 2.048V Ref|0:Temp disable]
+
+Serial1.write(0x00);//7:0(00000000=0x00)[7:DRDY|6:DCNT disable|5-4:CRC disable|3:BCS Off|2-0:IDAC off]
+
+Serial1.write(0x01);//7:0(00000001=0x01)[7-5:default|4-2:default|1:Reserved|0:Automatic data read mode]
+
+Serial1.write(0x78);//7:0(01111000=0x78)[7:Reserved|6:GPIO2output|5:GPIO1output|4:GPIO0output|3:GPIO2SEL DRDY|2:GPIO2 LogicLow|1:GPIO1 LogicLow|0:GPIO0 LogicLow]
