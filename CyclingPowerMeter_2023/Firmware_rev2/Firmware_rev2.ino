@@ -1,14 +1,25 @@
+#include <Adafruit_TinyUSB.h>
+#include <bluefruit.h>
 #include "LSM6DS3.h"
 #include "Wire.h"
 
+#define PIN_WAKE  7
 #define PIN_POWER A5
 
 LSM6DS3 myIMU(I2C_MODE, 0x6A); //I2C device address 0x6A
 
 void setup()
 {
+  Bluefruit.begin(); // Sleep functions need the softdevice to be active.
+  pinMode(PIN_WAKE,  INPUT_PULLUP_SENSE);    // this pin (PIN_WAKE) is pulled up and wakes up the feather when externally connected to ground.
+  pinMode(LED_RED, OUTPUT);
+  pinMode(LED_GREEN, OUTPUT);
+  digitalWrite(LED_GREEN, LOW);
+  delay(500);
+  digitalWrite(LED_GREEN, HIGH);
+
   Serial.begin(115200);
-  while (!Serial);
+  //while (!Serial);
   while (myIMU.begin() != 0);
 }
 
@@ -44,6 +55,13 @@ void loop()
   while (true)
   {
     do {
+      if (digitalRead(PIN_WAKE) == LOW) {
+        digitalWrite(LED_RED, LOW);
+        delay(500);
+        digitalWrite(LED_RED, HIGH);
+        delay(250);
+        sd_power_system_off();
+      }
       angular_velocity_degree = myIMU.readFloatGyroZ(); //単位は度
       angular_velocity_radian = angular_velocity_degree * (PI / 180.0);
       cadence.raw = angular_velocity_radian * (30.0 / PI);
@@ -65,7 +83,7 @@ void loop()
       }
       power.sum += power.raw;
 
-      //Serial.print(power.raw); Serial.print("  "); Serial.print(cadence.raw); Serial.print("  "); Serial.println(degree);
+      Serial.print(power.raw); Serial.print("  "); Serial.print(cadence.raw); Serial.print("  "); Serial.println(degree);
       delay(10);
     } while (degree < 360);
     degree = 0;
