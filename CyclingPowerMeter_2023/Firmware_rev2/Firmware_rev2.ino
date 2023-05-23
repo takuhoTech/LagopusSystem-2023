@@ -1,30 +1,38 @@
+#include "PeripheralBLE.h"
 #include <Adafruit_TinyUSB.h>
-#include <bluefruit.h>
 #include "LSM6DS3.h"
 #include "Wire.h"
 
+PeripheralBLE SerialBLE;
+
 #define PIN_WAKE  7
 #define PIN_POWER A5
+#define PIN_BAT A0
+
+#define PIN_HICHG   22 //D22 = P0.13 (BQ25100 ISET)
 
 LSM6DS3 myIMU(I2C_MODE, 0x6A); //I2C device address 0x6A
 
 void setup()
 {
-  Bluefruit.begin(); // Sleep functions need the softdevice to be active.
+  //Serial.begin(9600); while (!Serial) yield();
+  pinMode(PIN_HICHG, OUTPUT);
+  digitalWrite(PIN_HICHG, LOW); //High Charging Current : 100mA
+
+  SerialBLE.begin("PowerMeter"); // Sleep functions need the softdevice to be active.
   pinMode(PIN_WAKE,  INPUT_PULLUP_SENSE);    // this pin (PIN_WAKE) is pulled up and wakes up the feather when externally connected to ground.
   pinMode(LED_RED, OUTPUT);
-  pinMode(LED_GREEN, OUTPUT);
-  digitalWrite(LED_GREEN, LOW);
-  delay(500);
-  digitalWrite(LED_GREEN, HIGH);
+  pinMode(LED_BLUE, OUTPUT);
+  digitalWrite(LED_BLUE, LOW);
 
-  Serial.begin(115200);
-  //while (!Serial);
+  analogReadResolution(12); //0 - 4095
+
   while (myIMU.begin() != 0);
 }
 
 void loop()
 {
+  double BATvoltage = 0;
   double angular_velocity_degree = 0, angular_velocity_radian = 0, degree = 0;
   typedef struct
   {
@@ -43,8 +51,8 @@ void loop()
   Cadence cadence;
   typedef struct
   {
-    const double SLOPE = 5.56209;
-    const int OFFSET = 77;
+    const double SLOPE = 5.56209 * 4.0;
+    const int OFFSET = 77 * 4;
     int strain = 0;
     int raw = 0;
     long sum = 0;
@@ -56,6 +64,8 @@ void loop()
   {
     do {
       if (digitalRead(PIN_WAKE) == LOW) {
+        digitalWrite(LED_BLUE, HIGH);
+        delay(250);
         digitalWrite(LED_RED, LOW);
         delay(500);
         digitalWrite(LED_RED, HIGH);
@@ -83,7 +93,15 @@ void loop()
       }
       power.sum += power.raw;
 
-      Serial.print(power.raw); Serial.print("  "); Serial.print(cadence.raw); Serial.print("  "); Serial.println(degree);
+      if (SerialBLE.isOpen())
+      {
+        digitalWrite(LED_BLUE, HIGH);
+      }
+      else
+      {
+        digitalWrite(LED_BLUE, LOW);
+      }
+      //Serial.print(power.raw); Serial.print(" "); Serial.print(cadence.raw); Serial.print(" "); Serial.println(degree);
       delay(10);
     } while (degree < 360);
     degree = 0;
@@ -93,6 +111,17 @@ void loop()
     power.sum = 0;
     time.count = 0;
 
-    //Serial.println(cadence.avg);
+    power.avg *= 2;
+
+    BATvoltage = (3.3 / 1023.0) * (1510.0 / 510.0) * analogRead(PIN_BAT);
+
+    String str = "RPM:";
+    str += String(cadence.avg);
+    str += " PWR:";
+    str += String(power.avg);
+    str += " BAT:";
+    str += String(BATvoltage, 2);
+    SerialBLE.write(str.c_str());
+    //Serial.println(str);
   }
 }
