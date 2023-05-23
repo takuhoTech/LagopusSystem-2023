@@ -9,7 +9,7 @@ PeripheralBLE SerialBLE;
 #define PIN_POWER A5
 #define PIN_BAT A0
 
-#define PIN_HICHG   22 //D22 = P0.13 (BQ25100 ISET)
+#define PIN_HICHG 22 //D22 = P0.13 (BQ25100 ISET)
 
 LSM6DS3 myIMU(I2C_MODE, 0x6A); //I2C device address 0x6A
 
@@ -57,11 +57,13 @@ void loop()
     int raw = 0;
     long sum = 0;
     int avg = 0;
+    int max = 0;
   } Power;
   Power power;
 
   while (true)
   {
+    power.max = 0;
     do {
       if (digitalRead(PIN_WAKE) == LOW) {
         digitalWrite(LED_BLUE, HIGH);
@@ -93,6 +95,11 @@ void loop()
       }
       power.sum += power.raw;
 
+      if (power.raw > power.max)
+      {
+        power.max = power.raw;
+      }
+
       if (SerialBLE.isOpen())
       {
         digitalWrite(LED_BLUE, HIGH);
@@ -112,15 +119,26 @@ void loop()
     time.count = 0;
 
     power.avg *= 2;
+    power.max *= 2;
 
-    BATvoltage = (3.3 / 1023.0) * (1510.0 / 510.0) * analogRead(PIN_BAT);
+    BATvoltage = (3.6 / 4095.0) * (1510.0 / 510.0) * analogRead(PIN_BAT);
 
-    String str = "RPM:";
-    str += String(cadence.avg);
-    str += " PWR:";
+    /*String str = "RPM:";
+      str += String(cadence.avg);
+      str += " PWR:";
+      str += String(power.avg);
+      str += " BAT:";
+      str += String(BATvoltage, 2);*/
+
+    String str = String(cadence.avg);
+    str += "RPM ";
     str += String(power.avg);
-    str += " BAT:";
+    str += "W ";
+    str += String(power.max);
+    str += "W ";
     str += String(BATvoltage, 2);
+    str += "V";
+
     SerialBLE.write(str.c_str());
     //Serial.println(str);
   }
