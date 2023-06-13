@@ -14,5 +14,7 @@ void setup(void)
 
 void loop()
 {
+  SensorBLE.update();
   Serial.print(SensorBLE.getCadence());
+  delay(1000);
 }
