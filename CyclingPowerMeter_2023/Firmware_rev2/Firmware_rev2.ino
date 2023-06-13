@@ -36,10 +36,10 @@ void loop()
   double angular_velocity_degree = 0, angular_velocity_radian = 0, degree = 0;
   typedef struct
   {
-    double last = 0;
-    double current = 0;
-    double delta = 0;
-    long count = 0;
+    unsigned long last = 0;
+    unsigned long current = 0;
+    unsigned long delta = 0;
+    unsigned long count = 0;
   } Time;
   Time time;
   typedef struct
@@ -82,7 +82,7 @@ void loop()
       time.current = micros();
       time.delta = time.current - time.last;
       time.last = time.current;
-      degree += angular_velocity_degree * (time.delta / 1000000);
+      degree += angular_velocity_degree * (time.delta / 1000000.0);
       time.count++;
 
       power.strain = analogRead(PIN_POWER) - power.OFFSET;
@@ -137,7 +137,7 @@ void loop()
     str += String(power.max);
     str += "W ";
     str += String(BATvoltage, 2);
-    str += "V";
+    str += "V,";
 
     SerialBLE.write(str.c_str());
     //Serial.println(str);
