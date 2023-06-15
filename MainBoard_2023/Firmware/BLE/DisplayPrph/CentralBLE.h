@@ -42,7 +42,7 @@ class CentralBLE
     static int findConnHandle(uint16_t conn_handle);
     static void blink_timer_callback(TimerHandle_t xTimerID);
 
-    void print(int ID, const char *message);
+    void print(int ID, char *message);
     int available(int ID);
     char read(int ID);
     String readStringUntil(int ID, char terminator);
@@ -66,7 +66,7 @@ typedef struct
   uint8_t ID; //connect_callbackの中で、Peripheral[0].IDにAirMeterのIDを、Peripheral[1].IDにPowerMeterのIDを入れる
   String Name;
 } prph_info;
-#define MAX_PERIPHERAL 3 //this can be increased
+#define MAX_PERIPHERAL 2 //this can be increased
 static prph_info Peripheral[MAX_PERIPHERAL];
 
 //enum DEVICE {AirMeter, PowerMeter}; //AirMeter=0,PowerMeter=1

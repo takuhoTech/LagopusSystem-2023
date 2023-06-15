@@ -10,6 +10,7 @@ void setup(void)
   Serial1.begin(115200);
   SerialBLE.addPrphName("AirMeter");   //DEVICE_NUM = 0
   SerialBLE.addPrphName("PowerMeter"); //DEVICE_NUM = 1 //To add more than 2 peripherals, config MAX_PERIPHERAL definition in header file.
+  SerialBLE.addPrphName("Display");
   SerialBLE.begin("CentralXIAO");
   pinMode(LED_RED, OUTPUT);
   pinMode(LED_BLUE, OUTPUT);
@@ -18,6 +19,7 @@ void setup(void)
 }
 #define AIRMETER 0
 #define POWERMETER 1 //The numbers defined here are the order addPrphName executed. this will make it useful!
+#define ROUNDDISPLAY 2
 
 void loop()
 {
@@ -37,7 +39,7 @@ void loop()
   };
   PACKET packet;
 
-  delay(100);
+  delay(500);
 
   while (1) {
     if (SerialBLE.isOpen(AIRMETER)) {
@@ -71,6 +73,20 @@ void loop()
     if (Serial1.read() != -1)
     {
       Serial1.write(packet.bin, sizeof(PACKET));
+    }
+
+    if (SerialBLE.isOpen(ROUNDDISPLAY)) {
+      String str = String(packet.Cadence);
+      str += " ";
+      str += String(packet.PowerAvg);
+      str += " ";
+      str += String(int(packet.PowerMeterBat * 100.0));
+      str += " ";
+      str += String(int(packet.AirSpeed * 100.0));
+      str += " ";
+      str += String(int(packet.AirMeterBat * 100.0));
+      str += ",";
+      SerialBLE.print(getPeripheralID(ROUNDDISPLAY), str.c_str());
     }
     delay(100);
   }

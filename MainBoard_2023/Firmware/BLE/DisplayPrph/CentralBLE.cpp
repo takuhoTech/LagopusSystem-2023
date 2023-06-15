@@ -169,7 +169,7 @@ void CentralBLE::blink_timer_callback(TimerHandle_t xTimerID)
   if (count >= 10) count = 0;
 }
 
-void CentralBLE::print(int ID, const char *message)
+void CentralBLE::print(int ID, char *message)
 {
   if ( Bluefruit.Central.connected() ) //First check if we are connected to any peripherals
   {
