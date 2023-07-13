@@ -29,6 +29,9 @@ void setup(void)
   pinMode(LED_BLUE, OUTPUT);
   //digitalWrite(LED_RED, LOW);
   digitalWrite(LED_BLUE, LOW);
+
+  analogReference(AR_INTERNAL_2_4); // VREF = 2.4V
+  analogReadResolution(10);         // 10bit A/D
 }
 //#define AIRMETER 0
 //#define POWERMETER 1 //The numbers defined here are the order addPrphName executed. this will make it useful!
@@ -37,20 +40,40 @@ void setup(void)
 #define POWER_HEIGHT 175
 #define UNIT_OFFSET 51
 
+#define POWER_MAX 300
+#define POWER_TGT 240
+#define POWER_MIN 180
+
+#define CADENCE_MAX 100
+#define CADENCE_TGT 90
+#define CADENCE_MIN 80
+
+void DrawGauge(int x, int y0, int y1, uint32_t color)
+{
+  tft.fillRect(0, min(y0, y1), x, abs(y0 - y1), color);
+  tft.fillRect(240 - x, min(y0, y1), x, abs(y0 - y1), color);
+}
+
+void EraseGauge(int x, int y0, int y1, uint32_t color)
+{
+  tft.fillRect(x, min(y0, y1), 240 - (2 * x), abs(y0 - y1), color);
+}
+
 void loop()
 {
   typedef struct
   {
     double current = 0;
-    double last = 0;
+    //double last = 0;
   } BAT;
   BAT AirMeterBat;
   BAT PowerMeterBat;
+  BAT DisplayBat;
 
   typedef struct
   {
     double current = 0;
-    double last = 0;
+    //double last = 0;
   } Flow;
   Flow AirSpeed;
 
@@ -67,9 +90,13 @@ void loop()
   } Power;
   Power power;
 
+
   uint16_t WHITE = 0xFFFF;
   uint16_t BLACK = 0x0000;
   uint16_t RED = 0xF800;
+  uint16_t BLUE = 0x1c7f;
+  uint16_t PowerColor = 0x0000;
+  uint16_t CadenceColor = 0x0000;
   tft.init();
   tft.setRotation(0);
   tft.fillScreen(0x000000);
@@ -91,6 +118,8 @@ void loop()
 
   while (1) {
     if (SerialBLE.isOpen()) {
+      //String msg = "Ready";
+      //SerialBLE.write(msg.c_str());
       digitalWrite(LED_BLUE, HIGH);
       String tmp = SerialBLE.readStringUntil(',');
       StringSplitter *packet = new StringSplitter(tmp, ' ', 5);
@@ -104,11 +133,65 @@ void loop()
     {
       digitalWrite(LED_BLUE, LOW);
     }
-    tft.setCursor(174, CADENCE_HEIGHT + UNIT_OFFSET - 9);
+
+    tft.setTextSize(8);
+    if (cadence.last >= 100) {
+      tft.setCursor(60, CADENCE_HEIGHT);
+    }
+    else if (cadence.last >= 10) {
+      tft.setCursor(80, CADENCE_HEIGHT);
+    }
+    else
+    {
+      tft.setCursor(100, CADENCE_HEIGHT);
+    }
+    tft.setTextColor(BLACK);
+    tft.print(cadence.last);
+    if (cadence.current >= 100) {
+      tft.setCursor(60, CADENCE_HEIGHT);
+    }
+    else if (cadence.current >= 10) {
+      tft.setCursor(80, CADENCE_HEIGHT);
+    }
+    else
+    {
+      tft.setCursor(100, CADENCE_HEIGHT);
+    }
+    if (cadence.current >= CADENCE_MAX) {
+      //tft.setTextColor(RED, BLACK, false);
+      tft.setTextColor(RED);
+      CadenceColor = RED;
+    }
+    else if (cadence.current < CADENCE_MIN) {
+      //tft.setTextColor(BLUE, BLACK, false);
+      tft.setTextColor(BLUE);
+      CadenceColor = BLUE;
+    }
+    else {
+      //tft.setTextColor(WHITE, BLACK, false);
+      tft.setTextColor(WHITE);
+      CadenceColor = WHITE;
+    }
+    tft.print(cadence.current);
+    tft.setCursor(110, CADENCE_HEIGHT + UNIT_OFFSET);
+    tft.setTextSize(1);
+    tft.print("RPM");
+
+    DisplayBat.current = (analogRead(A0) / 1023.0) * 2.4 * 2;
+
+    tft.setCursor(174, CADENCE_HEIGHT + UNIT_OFFSET - 16);
     tft.setTextColor(WHITE, BLACK, true);
     tft.setTextSize(1);
-    tft.print("Air:");
-    tft.setCursor(174 + 23, CADENCE_HEIGHT + UNIT_OFFSET - 9);
+    tft.print("Dis");
+    tft.setCursor(174 + 18, CADENCE_HEIGHT + UNIT_OFFSET - 16);
+    tft.setTextColor(WHITE, BLACK, true);
+    tft.print(DisplayBat.current, 2);
+
+    tft.setCursor(174, CADENCE_HEIGHT + UNIT_OFFSET - 8);
+    tft.setTextColor(WHITE, BLACK, true);
+    tft.setTextSize(1);
+    tft.print("Air");
+    tft.setCursor(174 + 18, CADENCE_HEIGHT + UNIT_OFFSET - 8);
     tft.setTextColor(WHITE, BLACK, true);
     tft.print(AirMeterBat.current, 2);
     //tft.setCursor(172 + 53, CADENCE_HEIGHT + UNIT_OFFSET-9);
@@ -117,67 +200,90 @@ void loop()
     tft.setCursor(174, CADENCE_HEIGHT + UNIT_OFFSET);
     tft.setTextColor(WHITE, BLACK, true);
     tft.setTextSize(1);
-    tft.print("Pwr:");
-    tft.setCursor(174 + 23, CADENCE_HEIGHT + UNIT_OFFSET);
+    tft.print("Pwr");
+    tft.setCursor(174 + 18, CADENCE_HEIGHT + UNIT_OFFSET);
     tft.setTextColor(WHITE, BLACK, true);
     tft.print(PowerMeterBat.current, 2);
     //tft.setCursor(172 + 53, CADENCE_HEIGHT + UNIT_OFFSET);
     //tft.print("V");
 
+    tft.setCursor(65, CADENCE_HEIGHT + UNIT_OFFSET);
+    tft.setTextSize(1);
+    tft.print("MPS");
     tft.setCursor(17, 54);
     tft.setTextSize(2);
     tft.setTextColor(WHITE, BLACK, true);
     tft.print(AirSpeed.current, 2);
-    tft.setCursor(65, CADENCE_HEIGHT + UNIT_OFFSET);
-    tft.setTextSize(1);
-    tft.print("MPS");
+
 
     tft.setTextSize(8);
-    if (cadence.current >= 100) {
-      tft.setCursor(50, CADENCE_HEIGHT);
+    if (power.last >= 100) {
+      tft.setCursor(60, POWER_HEIGHT);
     }
-    else if (cadence.current >= 10) {
-      tft.setCursor(74, CADENCE_HEIGHT);
-    }
-    else
-    {
-      tft.setCursor(100, CADENCE_HEIGHT);
-    }
-    if (cadence.current < 100) {
-      tft.setTextColor(WHITE, BLACK, true);
-    }
-    else {
-      tft.setTextColor(RED, BLACK, true);
-    }
-    tft.print(cadence.current);
-
-    tft.setCursor(109, CADENCE_HEIGHT + UNIT_OFFSET);
-    tft.setTextSize(1);
-    tft.print("RPM");
-
-    tft.setTextSize(8);
-    if (power.current >= 100) {
-      tft.setCursor(50, POWER_HEIGHT);
-    }
-    else if (power.current >= 10) {
-      tft.setCursor(74, POWER_HEIGHT);
+    else if (power.last >= 10) {
+      tft.setCursor(80, POWER_HEIGHT);
     }
     else
     {
       tft.setCursor(100, POWER_HEIGHT);
     }
-    if (power.current < 300) {
-      tft.setTextColor(WHITE, BLACK, true);
+    tft.setTextColor(BLACK);
+    tft.print(power.last);
+    if (power.current >= 100) {
+      tft.setCursor(60, POWER_HEIGHT);
+    }
+    else if (power.current >= 10) {
+      tft.setCursor(80, POWER_HEIGHT);
+    }
+    else
+    {
+      tft.setCursor(100, POWER_HEIGHT);
+    }
+    if (power.current >= POWER_MAX) {
+      //tft.setTextColor(RED, BLACK, true);
+      tft.setTextColor(RED);
+      PowerColor = RED;
+    }
+    else if (power.current < POWER_MIN) {
+      //tft.setTextColor(BLUE, BLACK, true);
+      tft.setTextColor(BLUE);
+      PowerColor = BLUE;
     }
     else {
-      tft.setTextColor(RED, BLACK, true);
+      //tft.setTextColor(WHITE, BLACK, true);
+      tft.setTextColor(WHITE);
+      PowerColor = WHITE;
     }
     tft.print(power.current);
 
-    tft.setCursor(115, POWER_HEIGHT + UNIT_OFFSET);
+    tft.setCursor(108, POWER_HEIGHT + UNIT_OFFSET);
     tft.setTextSize(1);
-    tft.print("W");
+    tft.print("Watt");
 
-    delay(100);
+    if (cadence.current < CADENCE_TGT)
+    {
+      EraseGauge(map(cadence.current, 0, CADENCE_TGT, 0, 120), 120 - 50, 120 - 1, BLACK);
+      DrawGauge(map(cadence.current, 0, CADENCE_TGT, 0, 120), 120 - 50, 120 - 1, CadenceColor);
+      //tft.fillRect(0, 120, 120, 20, BLUE);
+    }
+    else
+    {
+      DrawGauge(120, 120 - 50, 120 - 1, CadenceColor);
+    }
+
+    if (power.current < POWER_TGT)
+    {
+      EraseGauge(map(power.current, 0, POWER_TGT, 0, 120), 120 + 1, 120 + 50, BLACK);
+      DrawGauge(map(power.current, 0, POWER_TGT, 0, 120), 120 + 1, 120 + 50, PowerColor);
+      //tft.fillRect(0, 120, 120, 20, BLUE);
+    }
+    else
+    {
+      DrawGauge(120, 120 + 1, 120 + 50, PowerColor);
+    }
+
+    cadence.last = cadence.current;
+    power.last = power.current;
+    delay(200);
   }
 }

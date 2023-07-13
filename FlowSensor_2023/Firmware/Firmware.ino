@@ -59,9 +59,17 @@ void loop()
     do {
       if (digitalRead(PIN_WAKE) == LOW) {
         digitalWrite(LED_EXT, HIGH);
-        delay(500);
+        delay(200);
         digitalWrite(LED_EXT, LOW);
-        delay(250);
+        delay(200);
+        digitalWrite(LED_EXT, HIGH);
+        delay(200);
+        digitalWrite(LED_EXT, LOW);
+        delay(200);
+        digitalWrite(LED_EXT, HIGH);
+        delay(200);
+        digitalWrite(LED_EXT, LOW);
+        delay(200);
         sd_power_system_off();
       }
 

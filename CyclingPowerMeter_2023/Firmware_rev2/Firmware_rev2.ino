@@ -113,7 +113,7 @@ void loop()
       }
       //Serial.print(power.raw); Serial.print(" "); Serial.print(cadence.raw); Serial.print(" "); Serial.println(degree);
       delay(10);
-    } while ((degree < 360) && (millis() - LastTime < 8000));
+    } while ((degree < 360) && (millis() - LastTime < 4000));
     degree = 0;
     cadence.avg = cadence.sum / time.count;
     power.avg = power.sum / time.count;

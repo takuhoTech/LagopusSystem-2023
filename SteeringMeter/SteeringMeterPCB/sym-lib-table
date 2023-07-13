@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "NSI45030AT1G")(type "KiCad")(uri "${KIPRJMOD}/../../ExternalLib/NSI45030AT1G/NSI45030AT1G.kicad_sym")(options "")(descr ""))
+)

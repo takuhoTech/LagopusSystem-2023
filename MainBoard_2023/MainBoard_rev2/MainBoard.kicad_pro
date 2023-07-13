@@ -406,7 +406,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "C:/Users/takuh/Desktop/MainBoard.step",
+      "step": "MainBoard.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

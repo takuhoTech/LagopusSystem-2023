@@ -6,15 +6,19 @@ void setup(void)
   Serial.begin(115200);
   while (!Serial);
 
-  Serial1.setTX(8);
-  Serial1.setRX(9);
-  Serial1.begin(115200);
-  SensorBLE.init(Serial1);
+  Serial2.setTX(8);
+  Serial2.setRX(9);
+  Serial2.begin(115200);
+  while (!Serial2);
+  SensorBLE.init(Serial2);
 }
 
 void loop()
 {
   SensorBLE.update();
-  Serial.print(SensorBLE.getCadence());
+  Serial.print(SensorBLE.AirMeterIsConnected());
+  Serial.print("  ");
+  Serial.println(SensorBLE.getAirSpeed());
+
   delay(1000);
 }

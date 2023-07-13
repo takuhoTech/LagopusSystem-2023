@@ -1,4 +1,4 @@
-#include <Adafruit_TinyUSB.h>
+//#include <Adafruit_TinyUSB.h>
 #include "StringSplitter.h"
 #include "CentralBLE.h"
 CentralBLE SerialBLE;
