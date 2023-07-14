@@ -15,6 +15,10 @@ void XIAOBLE::update()
     //Serial.write(pos.bin[i]);
     packet.bin[i] = _serial->read();
   }
+  while (_serial->available() > 0)
+  {
+    _serial->read();
+  }
 }
 
 bool XIAOBLE::AirMeterIsConnected()

@@ -18,7 +18,7 @@ void loop()
   SensorBLE.update();
   Serial.print(SensorBLE.AirMeterIsConnected());
   Serial.print("  ");
-  Serial.println(SensorBLE.getAirSpeed());
+  Serial.println(SensorBLE.getAirMeterBat());
 
   delay(1000);
 }
