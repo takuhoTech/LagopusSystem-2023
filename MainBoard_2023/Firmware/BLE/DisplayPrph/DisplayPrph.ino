@@ -128,6 +128,7 @@ void loop()
       PowerMeterBat.current = packet->getItemAtIndex(2).toInt() / 100.0;
       AirSpeed.current = packet->getItemAtIndex(3).toInt() / 100.0;
       AirMeterBat.current = packet->getItemAtIndex(4).toInt() / 100.0;
+      delete packet;
     }
     else
     {
