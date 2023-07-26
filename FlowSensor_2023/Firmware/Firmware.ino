@@ -73,7 +73,7 @@ void loop()
         sd_power_system_off();
       }
 
-      AirSpeed.raw = flow.readMetersPerSecond();
+      AirSpeed.raw = 2.25 * flow.readMetersPerSecond();
       AirSpeed.sum += AirSpeed.raw;
 
       time.current = millis();
