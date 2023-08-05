@@ -11,11 +11,26 @@ PeripheralBLE SerialBLE;
 
 #define PIN_HICHG 22 //D22 = P0.13 (BQ25100 ISET)
 
+//#define DEBUG
+
+#ifdef DEBUG
+#define DEBUG_begin(x) Serial.begin(x)
+#define DEBUG_print(x) Serial.print(x)
+#define DEBUG_println(x) Serial.println(x)
+#define DEBUG_wait while(!Serial)yield()
+#else
+#define DEBUG_begin(x)
+#define DEBUG_print(x)
+#define DEBUG_println(x)
+#define DEBUG_wait
+#endif
+
 LSM6DS3 myIMU(I2C_MODE, 0x6A); //I2C device address 0x6A
 
 void setup()
 {
-  //Serial.begin(9600); while (!Serial) yield();
+  DEBUG_begin(115200);
+  DEBUG_wait;
   pinMode(PIN_HICHG, OUTPUT);
   digitalWrite(PIN_HICHG, LOW); //High Charging Current : 100mA
 
@@ -115,7 +130,21 @@ void loop()
       delay(10);
     } while ((degree < 360) && (millis() - LastTime < 4000));
     degree = 0;
-    cadence.avg = cadence.sum / time.count;
+
+    int tmp = cadence.sum / time.count;
+    if (tmp < 0)
+    {
+      cadence.avg = 0;
+    }
+    else if (tmp > 300)
+    {
+      //do nothing
+    }
+    else
+    {
+      cadence.avg = tmp;
+    }
+
     power.avg = power.sum / time.count;
     cadence.sum = 0;
     power.sum = 0;
@@ -132,6 +161,8 @@ void loop()
       str += String(power.avg);
       str += " BAT:";
       str += String(BATvoltage, 2);*/
+
+    DEBUG_println(cadence.avg);
 
     String str = String(cadence.avg);
     str += "RPM ";
