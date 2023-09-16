@@ -61,10 +61,6 @@ args = sys.argv
 filename = args[1]
 filename_without_ext = os.path.splitext(os.path.basename(filename))[0]
 
-#drawing = svg2rlg(filename)
-#renderPDF.drawToFile(drawing, filename_without_ext + ".pdf")
-#drawing = svg2rlg(filename)
-#renderPM.drawToFile(drawing, filename_without_ext + ".png", fmt="PNG",dpi=2048)
 drawing = svg2rlg(filename)
 img = renderPM.drawToPIL(drawing, dpi=2048, bg=0xffffff, configPIL=None)
 
@@ -74,7 +70,10 @@ cv2.imwrite("raw.png",img)
 img = crop(img)
 cv2.imwrite("in.png",img)
 
-kernel = np.ones((17, 17), np.uint8)
+value = int(sys.argv[2])
+# 膨張係数は17くらいがちょうどいいかも
+
+kernel = np.ones((value, value), np.uint8)
 dilation = cv2.erode(img, kernel, iterations=1)
 out = cv2.bitwise_not(dilation)
 cv2.imwrite('./out.png', out)

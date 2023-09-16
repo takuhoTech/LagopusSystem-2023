@@ -1,2 +1,2 @@
 # LagopusSystem
-Advanced pilot-assistance system
+Avionics for Human-Powered Aircraft
