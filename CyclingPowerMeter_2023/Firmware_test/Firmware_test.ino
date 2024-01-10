@@ -21,9 +21,6 @@ LSM6DS3 myIMU(I2C_MODE, 0x6A); //I2C device address 0x6A
 
 void setup()
 {
-  Serial.begin(115200);
-  //while(!Serial)yield();
-
   pinMode(PIN_HICHG, OUTPUT);
   digitalWrite(PIN_HICHG, LOW); //High Charging Current : 100mA
 
@@ -67,7 +64,6 @@ void loop()
     int avg = 0;
     int max = 0;
     std::queue<int> FIFO;
-    std::queue<int> BUFF;
   } Power;
   Power power;
 
@@ -144,64 +140,50 @@ void loop()
       cadence.avg = tmp;
     }
 
-    if (cadence.avg > 50)
+    power.avg = power.sum / time.count;
+    power.avg *= 2;
+    power.max *= 2;
+
+    BATvoltage = (3.6 / 4095.0) * (1510.0 / 510.0) * analogRead(PIN_BAT);
+
+    String str = String(cadence.avg);
+    str += "RPM ";
+    if (cadence.avg > 60)
     {
-      power.BUFF.push(0);//ヘッダ
       while (power.FIFO.size() > 0)
       {
-        power.BUFF.push(power.FIFO.front());
+        str += String(power.FIFO.front() * 2);
+        str += " ";
+        power.FIFO.pop();
       }
     }
-    else
+    else //回転数が一定以下ならその一回転のデータをすべて捨てる
     {
       while (power.FIFO.size() > 0)
       {
         power.FIFO.pop();
       }
     }
-    //回転数が一定以下ならその一回転のデータをすべて捨てる
-
-    power.avg = power.sum / time.count;
-    cadence.sum = 0;
-    power.sum = 0;
-    //time.count = 0;
-
-    power.avg *= 2;
-    power.max *= 2;
-
-    BATvoltage = (3.6 / 4095.0) * (1510.0 / 510.0) * analogRead(PIN_BAT);
-
-    /*String str = "RPM:";
-      str += String(cadence.avg);
-      str += " PWR:";
-      str += String(power.avg);
-      str += " BAT:";
-      str += String(BATvoltage, 2);*/
-
-
-    if (Serial)
-    {
-      delay(1000);
-      while (power.BUFF.size() > 0)
-      {
-        Serial.println(power.BUFF.front());
-      }
-      Serial.flush();
-    }
-
-    String str = String(cadence.avg);
-    str += "RPM ";
-    str += String(power.avg);
-    str += "W ";
-    //str += String(power.max);
     str += String(time.count);
     str += "C ";
     str += String(BATvoltage, 2);
     str += "V,";
 
+    cadence.sum = 0;
+    power.sum = 0;
     time.count = 0;
 
-    SerialBLE.write(str.c_str());
-    //Serial.println(str);
+    /*String str = String(cadence.avg);
+      str += "RPM ";
+      str += String(power.avg);
+      str += "W ";
+      str += String(power.max);
+      str += "W ";
+      str += String(time.count);
+      str += "C ";
+      str += String(BATvoltage, 2);
+      str += "V,";*/
+
+    SerialBLE.write(str.c_str(), str.length());
   }
 }
